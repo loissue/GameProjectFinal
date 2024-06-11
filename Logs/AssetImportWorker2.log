@@ -1,0 +1,989 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.27f1 (73effa14754f) revision 7598074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 15610 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Truong Quang Loc/My project
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+55246
+Successfully changed project path to: C:/Users/Truong Quang Loc/My project
+C:/Users/Truong Quang Loc/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23624] Host "[IP] 26.92.33.99 [Port] 0 [Flags] 2 [Guid] 100289863 [EditorId] 100289863 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QBNHB0EN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23624] Host "[IP] 26.92.33.99 [Port] 0 [Flags] 2 [Guid] 100289863 [EditorId] 100289863 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-QBNHB0EN) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 15.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.27f1 (73effa14754f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Truong Quang Loc/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   31.0.15.5222
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006844 seconds.
+- Loaded All Assemblies, in  0.313 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.261 seconds
+Domain Reload Profiling: 572ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (122ms)
+		LoadAssemblies (97ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (107ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (261ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (209ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (148ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.600 seconds
+Refreshing native plugins compatible for Editor in 4.52 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.690 seconds
+Domain Reload Profiling: 1287ms
+	BeginReloadAssembly (136ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (110ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (691ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (549ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4227 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 82 unused Assets / (263.6 KB). Loaded Objects now: 4698.
+Memory consumption went from 161.5 MB to 161.3 MB.
+Total: 3.878700 ms (FindLiveObjects: 0.293200 ms CreateObjectMapping: 0.231000 ms MarkObjects: 3.119400 ms  DeleteObjects: 0.234400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 337760.055164 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/awp.png
+  artifactKey: Guid(e801f2ba888ca2a4da5fe10e6dbf5a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/awp.png using Guid(e801f2ba888ca2a4da5fe10e6dbf5a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635374f25503f4f18d18e13d5f72e496') in 0.084620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.409546 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/awp_unloaded.png
+  artifactKey: Guid(bd878d802d458ec4c87f698170fbb990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/awp_unloaded.png using Guid(bd878d802d458ec4c87f698170fbb990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf5e9db02f346fd7ced30e04994a09f7') in 0.016493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.246482 seconds.
+  path: Assets/2DWeaponPack/Sprites/Deagle/deagle.png
+  artifactKey: Guid(be0bad5390709e8448cf566da354017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Deagle/deagle.png using Guid(be0bad5390709e8448cf566da354017a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a38528e57c7c1071a82cf029fe1c3f') in 0.021297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.022369 seconds.
+  path: Assets/2DWeaponPack/Sprites/Deagle/deagle_part1.png
+  artifactKey: Guid(025e925c9ac937a4bac12153414f9780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Deagle/deagle_part1.png using Guid(025e925c9ac937a4bac12153414f9780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571d2956b92061bfc0ea5cc3720b06a8') in 0.022359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006340 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/fire_effect.png
+  artifactKey: Guid(652b88cddf003fc4eb87ad2de1203d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/fire_effect.png using Guid(652b88cddf003fc4eb87ad2de1203d25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3cc997e2e371e0aa8f36ace3c5fd40') in 0.019451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.175493 seconds.
+  path: Assets/2DWeaponPack/Sprites/Five_seven/five_seven.png
+  artifactKey: Guid(9830e4ce5d183d145bdcb9b155a046cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Five_seven/five_seven.png using Guid(9830e4ce5d183d145bdcb9b155a046cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedf48654f68a6bc51c7b9024755cc9b') in 0.016175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003710 seconds.
+  path: Assets/2DWeaponPack/Sprites/Five_seven/fiveseven_mag.png
+  artifactKey: Guid(edde09a2bf07e334395c0a6246e7b97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Five_seven/fiveseven_mag.png using Guid(edde09a2bf07e334395c0a6246e7b97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2f154d035bf2ae9ced2b76f0ed1385') in 0.015808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.801323 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/green_shotgun_bullet.png.png
+  artifactKey: Guid(f3464a60cd898134b96ec1fc1ef2c02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/green_shotgun_bullet.png.png using Guid(f3464a60cd898134b96ec1fc1ef2c02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ffa681b70a421a56eeddab5d8ad2ab') in 0.016227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.503209 seconds.
+  path: Assets/2DWeaponPack/Sprites/Knife/knife.png
+  artifactKey: Guid(ac9705bd8a687854990e7807c9540aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Knife/knife.png using Guid(ac9705bd8a687854990e7807c9540aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b46b87a6169c176676675e45f6d4f7') in 0.016066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.595431 seconds.
+  path: Assets/2DWeaponPack/Sprites/Nova/nova_.png
+  artifactKey: Guid(fb31db425a2eafc448aba6ac9ec7f5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Nova/nova_.png using Guid(fb31db425a2eafc448aba6ac9ec7f5d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff99cc81124364b4396e5b73ff2de187') in 0.017279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005668 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/pistol_bullet.png
+  artifactKey: Guid(7f2fa46247297d64c95c46f96ab8ed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/pistol_bullet.png using Guid(7f2fa46247297d64c95c46f96ab8ed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02524a9bb6565f126e60d2e046e4537c') in 0.017204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003993 seconds.
+  path: Assets/2DWeaponPack/Sprites/PSL/psl.png
+  artifactKey: Guid(0349c81585fd4044097225c2367ca32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/PSL/psl.png using Guid(0349c81585fd4044097225c2367ca32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73dc61a0a5e33e47a7abed0b95578f94') in 0.015229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.019018 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/red_shotgun_bullet.png
+  artifactKey: Guid(ae9655f6a5a7caf41af86ab828e3917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/red_shotgun_bullet.png using Guid(ae9655f6a5a7caf41af86ab828e3917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66896c9952689a2891accf33c634df95') in 0.016480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002426 seconds.
+  path: Assets/2DWeaponPack/Sprites/Rpg/rpg_rocket.png
+  artifactKey: Guid(f578e7e851dce92409d16037aa9eaab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Rpg/rpg_rocket.png using Guid(f578e7e851dce92409d16037aa9eaab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6488fab5576efd9f3fb3f5d59697381') in 0.016411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016005 seconds.
+  path: Assets/2DWeaponPack/Sprites/Sawed_off/sawed_off.png
+  artifactKey: Guid(3fa963ca811b6b247a8de1ae66ef6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Sawed_off/sawed_off.png using Guid(3fa963ca811b6b247a8de1ae66ef6b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dbffb0fd1b86e6fc89fa6d71cab17a') in 0.023373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004104 seconds.
+  path: Assets/2DWeaponPack/Sprites/Sawed_off/sawed_off_part_2.png
+  artifactKey: Guid(be4714de2abbf404b994fb1e5200c328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Sawed_off/sawed_off_part_2.png using Guid(be4714de2abbf404b994fb1e5200c328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd702c9e3ef84cb0d01a7b13e5da9303b') in 0.025060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.437013 seconds.
+  path: Assets/2DWeaponPack/Sprites/UMP/ump.png
+  artifactKey: Guid(d990de03fe8c68745985fa624fe5d6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/UMP/ump.png using Guid(d990de03fe8c68745985fa624fe5d6ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255c350cb22064858980757095b1a92a') in 0.015694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.077742 seconds.
+  path: Assets/2DWeaponPack/Sprites/UMP/ump_unloaded.png
+  artifactKey: Guid(7fe82a519b7d6db48a820cc54cf54651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/UMP/ump_unloaded.png using Guid(7fe82a519b7d6db48a820cc54cf54651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357c0dd081198d60b556c975ee8ffa6f') in 0.017496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.666450 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '866952d1244c0d3177c126c68f315344') in 0.037740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 9.689156 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '6c8a1b5f6cb0e8f94b4cbb56456d01bf') in 0.007531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 1.839813 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '9ce5e3f3d5f78a7ec46d7ae4bd60208a') in 0.007682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 2.218883 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '3fbb52f2ac71ad07dac4dca0d328b4c8') in 0.007343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 1.419792 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '9e6a37d5c5b030bf69135c4dc41bf633') in 0.009077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 3.260096 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '66f8a9621435e3bdde26cb0199f941ef') in 0.008357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 91.967602 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: 'eb17234acd9147737ab21c8373c291d6') in 0.008435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.419 seconds
+Refreshing native plugins compatible for Editor in 5.29 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.138 seconds
+Domain Reload Profiling: 1554ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (201ms)
+		LoadAssemblies (262ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1139ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (582ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (457ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 5.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4206 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (263.0 KB). Loaded Objects now: 4729.
+Memory consumption went from 161.0 MB to 160.7 MB.
+Total: 3.968400 ms (FindLiveObjects: 0.342000 ms CreateObjectMapping: 0.122600 ms MarkObjects: 3.308000 ms  DeleteObjects: 0.194900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 28.007958 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '090ea9df6b13aa653f1b461f78a5f8c3') in 0.050797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 7.594439 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '4645343a7df36764c64f89a2a4a27814') in 0.011357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 3.470247 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '5bb19f72bee7b1134165c660a30fc77b') in 0.006922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 6.394767 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '50b4e2d486a59f758d8895ee96ac9ad6') in 0.009937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 3.533856 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: 'bc9a429d7561331b28ac1324b45929cf') in 0.007760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.484755 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '4794c22bc8564dafc552260675b9eeac') in 0.007269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.415767 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '0b83a8cd3120fc8c9a26d2fc911b8de9') in 0.007797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 4.321749 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '1cfb7c0dff0f91e9a69659cc6e458b9a') in 0.008184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 30.221971 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '1b8b738aabfe1da41e34b89199ab76ba') in 0.009092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 13.586733 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '806218b069aad6decc3827f16e29cbcf') in 0.010925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 4.711646 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(25f825af6b67ef846a4ecc3d9e684a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+Enemy:.ctor () (at Assets/Scripts/Enemy.cs:37)
+HealthBarScript:.ctor () (at Assets/Scripts/EnemyS/HealthBarScript.cs:9)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object,bool)
+UnityEditor.GameObjectInspector:GetPreviewData (bool)
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[Assets/Scripts/Enemy.cs line 37]
+
+ -> (artifact id: '45a2abc5f7da29ae79e35e2a89f1d2bf') in 0.007805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20

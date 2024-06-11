@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Truong Quang Loc\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|c:\\users\\truong quang loc\\my project\\assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\bulletcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\bulletcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|c:\\users\\truong quang loc\\my project\\assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\inventoryscript\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\itempickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\inventoryscript\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\inventoryslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\\u00FAicript\\timeremaincount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\\u00FAicript\\timeremaincount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|C:\\Users\\Truong Quang Loc\\My project\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Truong Quang Loc\\My project\\Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T10:30:37.287Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\Item.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:24:57.262Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HealthBarScript.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T05:47:32.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventoryScript.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwBsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T08:46:38.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemPickUp.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:19:52.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BulletControl.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\BulletControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BulletControl.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\BulletControl.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BulletControl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:11:18.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TimeRemainCount.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
+              "RelativeToolTip": "Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:36:17.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InventorySlot.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\InventorySlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\InventorySlot.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\InventorySlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\InventorySlot.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:18:10.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ItemScript.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\ItemScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\ItemScript.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\InventoryScript\\ItemScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\ItemScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:17:23.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T07:14:05.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Shoot.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Shoot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Shoot.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\Shoot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Shoot.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwC0AAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T15:39:03.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAASwDsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T07:47:35.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CollabHistoryWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",
+              "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T06:39:14.507Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
