@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
     
-    public void TakeDamage(float amount)
+    public virtual void TakeDamage(float amount)
     {
         health -= amount; // Giảm sức khỏe khi bị trúng đạn
         

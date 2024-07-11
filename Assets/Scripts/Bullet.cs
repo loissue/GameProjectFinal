@@ -17,13 +17,10 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>(); ;
-        Debug.Log("cham");
-        if (enemy != null)
+        if(collision.gameObject.tag == "Enemy")
         {
-            enemy.TakeDamage(50);
-            Destroy(gameObject);
-
+            collision.gameObject.GetComponent<Health>().TakeDamage(50);
+            Debug.Log("cham");
         }
     }
     
