@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<Health>().TakeDamage(50);
+            collision.gameObject.GetComponent<Health>().TakeDamage(30);
             Debug.Log("cham");
         }
     }

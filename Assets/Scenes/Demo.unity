@@ -14442,11 +14442,11 @@ GameObject:
   - component: {fileID: 1402646734}
   - component: {fileID: 1402646733}
   - component: {fileID: 1402646736}
-  - component: {fileID: 1402646735}
   - component: {fileID: 1402646737}
-  m_Layer: 0
+  - component: {fileID: 1402646738}
+  m_Layer: 8
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14534,7 +14534,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 41.825, y: -12.164, z: 0.006811064}
-  m_LocalScale: {x: 2.2357774, y: 2.4495966, z: 1}
+  m_LocalScale: {x: 2.235777, y: 2.4495966, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14633,24 +14633,6 @@ PolygonCollider2D:
       - {x: 0.049999997, y: -0.26999998}
       - {x: 0.08, y: -0.28}
   m_UseDelaunayMesh: 0
---- !u!114 &1402646735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402646729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd34c9783804f61aeeb3a771bf9f777, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftEdge: {fileID: 0}
-  rightEdge: {fileID: 0}
-  enemy: {fileID: 1402646732}
-  speed: 0
-  idleDuration: 0
-  anim: {fileID: 0}
 --- !u!114 &1402646736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14663,18 +14645,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afcbd9e6932fe940800d7f26f354bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  moveSpeed: 2
-  minTimeToChangeDirection: 3
-  maxTimeToChangeDirection: 15
   attackCooldown: 3
-  range: 0
-  damage: 100
-  colliderDistance: 10
-  boxCollider: {fileID: 0}
+  range: 2.4
+  damage: 30
+  colliderDistance: 0.15
+  polygonCollider: {fileID: 1402646734}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!114 &1402646737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14690,7 +14668,27 @@ MonoBehaviour:
   startingHealth: 100
   iFramesDuration: 0
   numberOfFlashes: 0
-  components: []
+  components:
+  - {fileID: 1402646738}
+  - {fileID: 1402646736}
+--- !u!114 &1402646738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402646729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd34c9783804f61aeeb3a771bf9f777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  polygonCollider: {fileID: 1402646734}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckDistance: 0.98
+  speed: 3
 --- !u!4 &1402971918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8966734679898667424, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
@@ -19974,6 +19972,7 @@ GameObject:
   - component: {fileID: 2026892396}
   - component: {fileID: 2026892397}
   - component: {fileID: 2026892398}
+  - component: {fileID: 2026892399}
   m_Layer: 7
   m_Name: Idle_0
   m_TagString: Player
@@ -20188,6 +20187,22 @@ MonoBehaviour:
   inventorySlotPrefab: {fileID: 2106937994874269705, guid: 936aa5cba1d851a48b4fad2b6c256df5, type: 3}
   inventoryGrid: {fileID: 1214090291}
   inventory: []
+--- !u!114 &2026892399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026892389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16b0f80d38b28a4f87a7ed511cd7ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 150
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
 --- !u!4 &2027449719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8966734679898667424, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}

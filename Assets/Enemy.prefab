@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8703226837834478593}
   m_Layer: 8
   m_Name: Enemy
-  m_TagString: Enemy1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef9ae87bd14e8fa4b9c9300968510a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  moveSpeed: 2
-  minTimeToChangeDirection: 3
-  maxTimeToChangeDirection: 15

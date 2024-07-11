@@ -15,7 +15,7 @@ E:/Download/SLIDES/SUM2024/PRU212/Project/GameProjectFinal
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58150
+61016
 Successfully changed project path to: E:/Download/SLIDES/SUM2024/PRU212/Project/GameProjectFinal
 E:/Download/SLIDES/SUM2024/PRU212/Project/GameProjectFinal
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/Download/SLIDES/SUM2024/PRU212/Project/GameProjectFinal
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20784] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 2729798580 [EditorId] 2729798580 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GNMFNN5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [14144] Host "[IP] 10.33.45.35 [Port] 0 [Flags] 2 [Guid] 485825185 [EditorId] 485825185 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GNMFNN5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20784] Host "[IP] 192.168.1.46 [Port] 0 [Flags] 2 [Guid] 2729798580 [EditorId] 2729798580 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GNMFNN5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14144] Host "[IP] 10.33.45.35 [Port] 0 [Flags] 2 [Guid] 485825185 [EditorId] 485825185 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-GNMFNN5) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 5.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 11.28 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.27f1 (73effa14754f)
 [Subsystems] Discovering subsystems at path E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56388
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/Download/SLIDES/SUM2024/PRU212/Unity/Editor/2022.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003433 seconds.
-- Loaded All Assemblies, in  0.404 seconds
+Registered in 0.008753 seconds.
+- Loaded All Assemblies, in  0.546 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.313 seconds
-Domain Reload Profiling: 718ms
-	BeginReloadAssembly (104ms)
+- Finished resetting the current domain, in  0.450 seconds
+Domain Reload Profiling: 997ms
+	BeginReloadAssembly (181ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (214ms)
-		LoadAssemblies (104ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (221ms)
+		LoadAssemblies (180ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (212ms)
-			TypeCache.Refresh (210ms)
-				TypeCache.ScanAssembly (190ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (215ms)
+				TypeCache.ScanAssembly (194ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (314ms)
+	FinalizeReload (451ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (247ms)
+		SetupLoadedEditorAssemblies (360ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (169ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (265ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 718ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.722 seconds
-Refreshing native plugins compatible for Editor in 2.02 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.017 seconds
+Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.631 seconds
-Domain Reload Profiling: 1354ms
-	BeginReloadAssembly (244ms)
+- Finished resetting the current domain, in  1.180 seconds
+Domain Reload Profiling: 2197ms
+	BeginReloadAssembly (290ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (39ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (405ms)
-		LoadAssemblies (400ms)
+		CreateAndSetChildDomain (59ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (603ms)
+		LoadAssemblies (515ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (131ms)
-				TypeCache.ScanAssembly (118ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (632ms)
+		AnalyzeDomain (241ms)
+			TypeCache.Refresh (197ms)
+				TypeCache.ScanAssembly (176ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1181ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (486ms)
+		SetupLoadedEditorAssemblies (918ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (351ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (646ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 2.36 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 4.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4227 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 78 unused Assets / (136.5 KB). Loaded Objects now: 4686.
-Memory consumption went from 151.9 MB to 151.7 MB.
-Total: 4.497500 ms (FindLiveObjects: 0.441900 ms CreateObjectMapping: 0.298400 ms MarkObjects: 3.532100 ms  DeleteObjects: 0.223500 ms)
+Unloading 78 unused Assets / (136.1 KB). Loaded Objects now: 4687.
+Memory consumption went from 152.1 MB to 151.9 MB.
+Total: 7.075500 ms (FindLiveObjects: 0.850700 ms CreateObjectMapping: 0.157600 ms MarkObjects: 5.637000 ms  DeleteObjects: 0.428300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -184,14 +184,303 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 332804.018261 seconds.
-  path: Assets/Prefabs/NormalBulletItem.prefab
-  artifactKey: Guid(dfca3ae0cad5a2f489714fa32528f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NormalBulletItem.prefab using Guid(dfca3ae0cad5a2f489714fa32528f9f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017849d16f19cc302779faa42e452ebe') in 0.113933 seconds
+  Time since last request: 543061.709098 seconds.
+  path: Assets/Enemy/Skeleton/Death.png
+  artifactKey: Guid(e916ab066429223478f9364e161ec292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Skeleton/Death.png using Guid(e916ab066429223478f9364e161ec292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8ecc55b6c757c59a4d779a1917c940') in 0.295758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 226.028459 seconds.
+  path: Assets/2DWeaponPack/Sprites/AK-47/ak-47.png
+  artifactKey: Guid(c9ef79ba59db38f40bd698e29162563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AK-47/ak-47.png using Guid(c9ef79ba59db38f40bd698e29162563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '838c05f12fd38e612b15a2fd160405d1') in 0.027226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/2DWeaponPack/Sprites/AK-47/ak-47_unloaded.png
+  artifactKey: Guid(b75c92e9cdc7f914c8e19ef642fde7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AK-47/ak-47_unloaded.png using Guid(b75c92e9cdc7f914c8e19ef642fde7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'becee47b974db39a0e33b94f8dc6157b') in 0.025002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.015273 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/apw_silencer_unloaded.png
+  artifactKey: Guid(d0e8fdc0947aa464dac4a346ba5f19bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/apw_silencer_unloaded.png using Guid(d0e8fdc0947aa464dac4a346ba5f19bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270ed1ae694bc60290f46b22e0592600') in 0.027906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.016178 seconds.
+  path: Assets/Enemy/Goblin/Attack.png
+  artifactKey: Guid(92012b204d837f44099ead12c12e8320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Goblin/Attack.png using Guid(92012b204d837f44099ead12c12e8320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7439724e6ac3fb83f65e90b4d283445c') in 0.041462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/awp_unloaded.png
+  artifactKey: Guid(bd878d802d458ec4c87f698170fbb990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/awp_unloaded.png using Guid(bd878d802d458ec4c87f698170fbb990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fb095f99b3c87bd91bcf61982115f0') in 0.034403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Bullet.png
+  artifactKey: Guid(97cf77d818296ca459e1d9a7cddcf7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Bullet.png using Guid(97cf77d818296ca459e1d9a7cddcf7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efcfd444b36c5f72931d9ab784bbb91') in 0.027610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Soldier_1/Dead.png
+  artifactKey: Guid(8f9f5225b87accf44b2fb4181b2ef425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_1/Dead.png using Guid(8f9f5225b87accf44b2fb4181b2ef425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b50d9741f20c676c0efc0409e07b56f') in 0.023987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/awp.png
+  artifactKey: Guid(e801f2ba888ca2a4da5fe10e6dbf5a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/awp.png using Guid(e801f2ba888ca2a4da5fe10e6dbf5a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8109e44411c2c877180e571adf899cf6') in 0.029200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Enemy/Mushroom/Death.png
+  artifactKey: Guid(2c9dd20480fb8f940ac0d903a6130cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Mushroom/Death.png using Guid(2c9dd20480fb8f940ac0d903a6130cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '539fb92f0ed42b90b00dc36d41608571') in 0.025174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Enemy/Goblin/Death.png
+  artifactKey: Guid(7955abd8ee3c52d40a9e89b8cc873e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Goblin/Death.png using Guid(7955abd8ee3c52d40a9e89b8cc873e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ada6c130542d381faa2b663130d328d') in 0.022448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/2DWeaponPack/Sprites/AWP/awp_silencer.png
+  artifactKey: Guid(395587f5b7a351b47bd38a7e3b5fe330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/AWP/awp_silencer.png using Guid(395587f5b7a351b47bd38a7e3b5fe330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0977410dae023bcb789b0f4ff9212c7b') in 0.023446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/2DWeaponPack/Sprites/Five_seven/five_seven_part2.png
+  artifactKey: Guid(1208efd6fa5d5df43bdb13fa8d37574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Five_seven/five_seven_part2.png using Guid(1208efd6fa5d5df43bdb13fa8d37574f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f987aff57b0e969a75f53afd46f13a0') in 0.025564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Enemy/Flying eye/Death.png
+  artifactKey: Guid(2747b27a6e3766c44bfb667b1556e23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Flying eye/Death.png using Guid(2747b27a6e3766c44bfb667b1556e23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3291a15ad4d59657fa54fc3f3fe3d4') in 0.023750 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/green_shotgun_bullet.png.png
+  artifactKey: Guid(f3464a60cd898134b96ec1fc1ef2c02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/green_shotgun_bullet.png.png using Guid(f3464a60cd898134b96ec1fc1ef2c02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025762d12f96f0980d07ed1342875f37') in 0.023685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/2DWeaponPack/Sprites/Glock_18/glock_18_unloaded.png
+  artifactKey: Guid(8edd4ad74856d8d4fa6d368294f96584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Glock_18/glock_18_unloaded.png using Guid(8edd4ad74856d8d4fa6d368294f96584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfccfb8ff79e4bdd17e56a56e695161') in 0.027373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/Soldier_3/Hurt.png
+  artifactKey: Guid(ae44065cddd72d44595f7a973bb08832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_3/Hurt.png using Guid(ae44065cddd72d44595f7a973bb08832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0121be41977b1d4cde9f8480f61c9bbe') in 0.025660 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Enemy/Mushroom/Idle.png
+  artifactKey: Guid(d542bdebb606fbc47ad8d7673ba14cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Mushroom/Idle.png using Guid(d542bdebb606fbc47ad8d7673ba14cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1980dc7e9c20a3f02c439ff18f61b7') in 0.022357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Soldier_1/Idle.png
+  artifactKey: Guid(159b13607c5d8794e9dd403f6eadf74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_1/Idle.png using Guid(159b13607c5d8794e9dd403f6eadf74f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b527e8bb721f13ba1439169d3f7f3c99') in 0.050379 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/2DWeaponPack/Sprites/M4A4/m4a4_unlaoded.png
+  artifactKey: Guid(cd2eb795682b943498950cbecf9362cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/M4A4/m4a4_unlaoded.png using Guid(cd2eb795682b943498950cbecf9362cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3869fe4c0c3e0d51d0553cce596f4ae') in 0.045732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Material/mikhail-emelianov-bg-slav-color-2-3.jpg
+  artifactKey: Guid(aec98e4b27834c94982fcd5d5206d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/mikhail-emelianov-bg-slav-color-2-3.jpg using Guid(aec98e4b27834c94982fcd5d5206d1d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db4ad8c12cebab36ada002d46d15aba') in 0.042978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Soldier_1/Hurt.png
+  artifactKey: Guid(a130be68391a04f439a7b04ec2b35409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_1/Hurt.png using Guid(a130be68391a04f439a7b04ec2b35409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '009d58cb7af3787b9e07ccb28ce9d085') in 0.025108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/2DWeaponPack/Sprites/PSL/psl_unloaded.png
+  artifactKey: Guid(8dc927ec3c0e48844b93eb84f45d273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/PSL/psl_unloaded.png using Guid(8dc927ec3c0e48844b93eb84f45d273c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a442bc62f2f23178b4d86264a5c5024') in 0.023449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/red_shotgun_bullet.png
+  artifactKey: Guid(ae9655f6a5a7caf41af86ab828e3917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/red_shotgun_bullet.png using Guid(ae9655f6a5a7caf41af86ab828e3917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459948d08a3a6ef1516c40bb6ef53d4b') in 0.023073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Soldier_3/Recharge.png
+  artifactKey: Guid(11a6f9664648c6d4f8f6e114be10a689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_3/Recharge.png using Guid(11a6f9664648c6d4f8f6e114be10a689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8068f2a94dd9a173a5e4277f6c5903c1') in 0.024688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/2DWeaponPack/Sprites/Rpg/rpg_unloaded.png
+  artifactKey: Guid(414fdea030c21fa4fae454b950c6b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Rpg/rpg_unloaded.png using Guid(414fdea030c21fa4fae454b950c6b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1038dcfc35a21ce0a29702287aabbf03') in 0.025449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Soldier_2/Run.png
+  artifactKey: Guid(7f44763fea7525a489a172581199be3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_2/Run.png using Guid(7f44763fea7525a489a172581199be3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bacc011bbed68c21b362d3e0c29cc711') in 0.031181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Soldier_1/Grenade.png
+  artifactKey: Guid(2e76bc4664e125548b8870fa68e52b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_1/Grenade.png using Guid(2e76bc4664e125548b8870fa68e52b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e1ec0bbb529e291e11e56e0ac0ddaf') in 0.030454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/2DWeaponPack/Sprites/Deagle/deagle_mag.png
+  artifactKey: Guid(648c2f50b2c3e5c4892c4d71d1aaf829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Deagle/deagle_mag.png using Guid(648c2f50b2c3e5c4892c4d71d1aaf829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2209b45ee09c9764bf0e7875f369aa7f') in 0.032231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Soldier_2/Grenade.png
+  artifactKey: Guid(152e17e635d509b45a6f387ba73baedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_2/Grenade.png using Guid(152e17e635d509b45a6f387ba73baedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff28c6cdffe03b376e10f77006bd64ad') in 0.031202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/2DWeaponPack/Sprites/Glock_18/glock-18.png
+  artifactKey: Guid(76e1f7391bdef7243820880a793ddd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Glock_18/glock-18.png using Guid(76e1f7391bdef7243820880a793ddd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a5c04f54d856244f402e561892bf33') in 0.041127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000721 seconds.
+  path: Assets/Sprites/Soldier_3/Attacck.png
+  artifactKey: Guid(6d1e085a21826334ebef82fdec3f4ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_3/Attacck.png using Guid(6d1e085a21826334ebef82fdec3f4ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807daaf6561b5848eff74cc9bba9365a') in 0.047343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/2DWeaponPack/Sprites/Utility/incendiary.png
+  artifactKey: Guid(b50e1b71f78ccb747bee5dd7218a0a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Utility/incendiary.png using Guid(b50e1b71f78ccb747bee5dd7218a0a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f98a5351e01d0c7ab227e7c3d053d82') in 0.044946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Enemy/Flying eye/Flight.png
+  artifactKey: Guid(77aca89f2f13917479714f78fd4d04d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy/Flying eye/Flight.png using Guid(77aca89f2f13917479714f78fd4d04d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5c65d283ddcf3309765bce845391a2') in 0.048946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/2DWeaponPack/Sprites/Bullets/pistol_bullet.png
+  artifactKey: Guid(7f2fa46247297d64c95c46f96ab8ed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/Bullets/pistol_bullet.png using Guid(7f2fa46247297d64c95c46f96ab8ed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf6a74fdec2739e662072b1f02762c6') in 0.048173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/2DWeaponPack/Sprites/PSL/psl.png
+  artifactKey: Guid(0349c81585fd4044097225c2367ca32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2DWeaponPack/Sprites/PSL/psl.png using Guid(0349c81585fd4044097225c2367ca32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4e30fbde711c16ffe93269445527e4') in 0.039133 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Sprites/Soldier_3/Idle.png
+  artifactKey: Guid(21bfc24d0e49613408692103b5997951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Soldier_3/Idle.png using Guid(21bfc24d0e49613408692103b5997951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc1266d27ce06233908888385ce7cbeb') in 0.041619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

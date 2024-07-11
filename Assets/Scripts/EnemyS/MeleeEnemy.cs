@@ -11,7 +11,7 @@ public class SkeletonEnemy : Enemy
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
-    [SerializeField] private BoxCollider2D boxCollider;
+    [SerializeField] private PolygonCollider2D polygonCollider;
 
     [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
@@ -19,12 +19,15 @@ public class SkeletonEnemy : Enemy
 
     //References
     private Animator anim;
+    private Health playerHealth;
     private EnemyPatrol enemyPatrol;
+    private Health health;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol>();
+        enemyPatrol = GetComponent<EnemyPatrol>();
+        health = GetComponent<Health>();
     }
 
     private void Update()
@@ -48,29 +51,25 @@ public class SkeletonEnemy : Enemy
     private bool PlayerInSight()
     {
         RaycastHit2D hit = 
-            Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
-            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
+            Physics2D.BoxCast(polygonCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+            new Vector3(polygonCollider.bounds.size.x * range, polygonCollider.bounds.size.y, polygonCollider.bounds.size.z),
             0, Vector2.left, 0, playerLayer);
 
-        // if (hit.collider != null)
-        //     playerHealth = hit.transform.GetComponent<Health>();
+        if (hit.collider != null)
+            playerHealth = hit.transform.GetComponent<Health>();
 
         return hit.collider != null;
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
-            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
+        Gizmos.DrawWireCube(polygonCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+            new Vector3(polygonCollider.bounds.size.x * range, polygonCollider.bounds.size.y, polygonCollider.bounds.size.z));
     }
 
-    public override void TakeDamage(float amount)
+    private void DamagePlayer()
     {
-        health -= amount; // Giảm sức khỏe khi bị trúng đạn
-        
-        if (health <= 0)
-        {
-            Destroy(gameObject); // Gọi phương thức Die khi sức khỏe <= 0
-        }
+        if (PlayerInSight())
+            playerHealth.TakeDamage(damage);
     }
 }

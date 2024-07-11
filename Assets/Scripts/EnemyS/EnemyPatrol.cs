@@ -3,12 +3,10 @@ namespace EnemyS
 {
     public class EnemyPatrol : MonoBehaviour
     {
-        [Header ("Patrol Points")]
-        [SerializeField] private Transform leftEdge;
-        [SerializeField] private Transform rightEdge;
-
         [Header("Enemy")]
-        [SerializeField] private Transform enemy;
+        [SerializeField] private PolygonCollider2D polygonCollider;
+        [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private float groundCheckDistance = 1f;
 
         [Header("Movement parameters")]
         [SerializeField] private float speed;
@@ -16,16 +14,17 @@ namespace EnemyS
         private bool movingLeft;
 
         [Header("Idle Behaviour")]
-        [SerializeField] private float idleDuration;
+        private float idleDuration;
         private float idleTimer;
 
-        [Header("Enemy Animator")]
-        [SerializeField] private Animator anim;
+        private Animator anim;
 
         private void Awake()
         {
-            initScale = enemy.localScale;
+            initScale = gameObject.transform.localScale;
+            anim = gameObject.GetComponent<Animator>();
         }
+
         private void OnDisable()
         {
             anim.SetBool("moving", false);
@@ -33,20 +32,41 @@ namespace EnemyS
 
         private void Update()
         {
-            if (movingLeft)
+            if (IsGroundInFront())
             {
-                if (enemy.position.x >= leftEdge.position.x)
-                    MoveInDirection(-1);
-                else
-                    DirectionChange();
+                MoveInDirection(movingLeft ? -1 : 1);
             }
             else
             {
-                if (enemy.position.x <= rightEdge.position.x)
-                    MoveInDirection(1);
-                else
-                    DirectionChange();
+                DirectionChange();
             }
+        }
+
+        private bool IsGroundInFront()
+        {
+            Vector2 position = gameObject.transform.position;
+            Vector2 direction = movingLeft ? Vector2.left : Vector2.right;
+            Vector2 groundCheckPosition = position + new Vector2(direction.x, -groundCheckDistance);
+
+
+            RaycastHit2D hit = Physics2D.BoxCast(
+                groundCheckPosition, 
+                new Vector3(polygonCollider.bounds.size.x, polygonCollider.bounds.size.y, polygonCollider.bounds.size.z),
+                0,
+                direction, 
+                groundCheckDistance,
+                groundLayer);
+            return hit.collider != null;
+        }
+        
+        private void OnDrawGizmos()
+        {
+            if (polygonCollider == null) return;
+            Gizmos.color = Color.red;
+            Vector2 position = gameObject.transform.position;
+            Vector2 direction = movingLeft ? Vector2.left : Vector2.right;
+            Vector2 groundCheckPosition = position + new Vector2(direction.x * groundCheckDistance, -groundCheckDistance);
+            Gizmos.DrawWireCube(groundCheckPosition, new Vector3(polygonCollider.bounds.size.x, polygonCollider.bounds.size.y, polygonCollider.bounds.size.z));
         }
 
         private void DirectionChange()
@@ -54,8 +74,11 @@ namespace EnemyS
             anim.SetBool("moving", false);
             idleTimer += Time.deltaTime;
 
-            if(idleTimer > idleDuration)
+            if (idleTimer > idleDuration)
+            {
                 movingLeft = !movingLeft;
+                idleTimer = 0;
+            }
         }
 
         private void MoveInDirection(int _direction)
@@ -63,13 +86,13 @@ namespace EnemyS
             idleTimer = 0;
             anim.SetBool("moving", true);
 
-            //Make enemy face direction
-            enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction,
+            // Make enemy face direction
+            gameObject.transform.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction,
                 initScale.y, initScale.z);
 
-            //Move in that direction
-            enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed,
-                enemy.position.y, enemy.position.z);
+            // Move in that direction
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x + Time.deltaTime * _direction * speed,
+                gameObject.transform.position.y, gameObject.transform.position.z);
         }
     }
 }
