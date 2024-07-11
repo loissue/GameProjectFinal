@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 4768519291701731100}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.85, y: -6.769, z: 0.6006764}
-  m_LocalScale: {x: 0.123254456, y: 0.123254456, z: 0.123254456}
+  m_LocalPosition: {x: 26.67718, y: -5.6352434, z: 0.6006764}
+  m_LocalScale: {x: 0.080767415, y: 0.080767415, z: 0.080767415}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.25, y: 2.25}
+  m_Size: {x: 12.8, y: 12.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -123,7 +123,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 12.8, y: 12.8}
-    newSize: {x: 2.25, y: 2.25}
+    newSize: {x: 12.8, y: 12.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -143,4 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd29cbcdabe7b049a992fc9356177bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bufManager: {fileID: 6436410840800002005, guid: da090ae3918defd4bb191157437a446e, type: 3}
   Type: 1

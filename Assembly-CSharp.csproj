@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{30F7BA8E-9D7F-B9C6-553B-A76ABC22D023}</ProjectGuid>
+    <ProjectGuid>{741B2FC3-6AE0-2166-DD46-AC44E716F58E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,12 +66,16 @@
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\BulletControl.cs" />
     <Compile Include="Assets\Scripts\weapon script\Bullet.cs" />
+    <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\weaponpickup.cs" />
+    <Compile Include="Assets\Scripts\BufManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BuffItemController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
