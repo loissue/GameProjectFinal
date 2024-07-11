@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                  animator.SetBool("RightWalk", true);
                  }
-                Debug.Log("Walk");
+                
             }
             else
             {

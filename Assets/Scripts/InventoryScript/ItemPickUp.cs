@@ -23,7 +23,7 @@ public class ItemPickUp : MonoBehaviour
             if (pickupText != null)
             {
                 pickupText.SetActive(true); // Hiện UI Text khi player đi vào vùng va chạm
-                Debug.Log("Touched");
+                
             }
         }
     }

@@ -38,7 +38,7 @@ public class InventoryScript : MonoBehaviour
     {
         if (inventoryCanvas != null)
         {
-            Debug.Log("inventory off");
+            
             inventoryCanvas.SetActive(!inventoryCanvas.activeSelf);
             if (inventoryCanvas.activeSelf)
             {
