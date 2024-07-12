@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9164791146125029101}
   - component: {fileID: 8975021099032955947}
   - component: {fileID: 5464807746788843552}
+  - component: {fileID: 8255614881748204192}
   m_Layer: 3
   m_Name: Ground (1) 1
   m_TagString: Ground
@@ -148,3 +149,28 @@ MonoBehaviour:
   spawnableObjects:
   - objectToSpawn: {fileID: 9140195117478459886, guid: 25f825af6b67ef846a4ecc3d9e684a42, type: 3}
     spawnChance: 15.4
+--- !u!114 &8255614881748204192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4749056724019080536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec47fc9df8880b1478cea1b55fbae30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabsWithPercentages:
+  - prefab: {fileID: 7555581044122428436, guid: cadf8656918f30f42a46439724d07cb8, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: f57a80f02cd339d4eb7b4fd618334da5, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: c324b8f0a7a3e0d4682de3450fc90edf, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 8708939a66fffeb469f096c3d455fed3, type: 3}
+    percentage: 30
+  - prefab: {fileID: 7555581044122428436, guid: d4b7a15ea6e0fa641ac2ca3ec562ef67, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 540b7771dab29b945929a534aae157f0, type: 3}
+    percentage: 20
