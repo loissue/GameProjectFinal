@@ -4821,7 +4821,23 @@ MonoBehaviour:
     percentage: 10
   - prefab: {fileID: 7555581044122428436, guid: 4af9aca7a50724342bf26220fe6bf24f, type: 3}
     percentage: 10
-  list3: []
+  list3:
+  - prefab: {fileID: 7555581044122428436, guid: 964d96f1b50682b478ba2e58077901af, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: cf89231d47cb2df4d94e61379951559b, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: b62388c309082344796bb09283e07706, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: de2bbc4c7f1b4ec4aa138fbdf93646d3, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 58fbf67a1fb6fae44ad8516fbc79ee17, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 8c4f47edd45d24b408fd95e9cab30cfe, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: ac53b23bb9192484faaa9df2b23e186f, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: a8b85b5078fb4f14c884df89a74663cc, type: 3}
+    percentage: 20
   chosenList: []
   terrainParent: {fileID: 0}
 --- !u!4 &541063340
