@@ -16,10 +16,16 @@ public class Magazin : MonoBehaviour
     void Start()
     {
         //giveoutMagazin();
-        Bullets = new GameObject[4];
+        Bullets = new GameObject[10];
         Bullets[0] = bullet1;
         Bullets[1] = bullet2;
         Bullets[3] = bullet1;
+        Bullets[4] = bullet1;
+        Bullets[5] = bullet2;
+        Bullets[6] = bullet1;
+        Bullets[7] = bullet2;
+        Bullets[8] = bullet1;
+        Bullets[9] = bullet2;
 
     }
     public void addbullettomagazin(GameObject bullet)
@@ -38,6 +44,7 @@ public class Magazin : MonoBehaviour
     {
         
         shoot.getbulletlist(Bullets);
+        GunInven.GetFirstGun(Bullets, this.gameObject);
     }
     //public void giveoutMagazin() 
     //{

@@ -53,18 +53,22 @@ public class Shoot : MonoBehaviour
             
             if (Bullets[a] != null)
             {
+                
                 Shooting(Bullets[a]); // Assuming BulletList has a property Bullet of type GameObject
                 a++;
-            }
-
-            while (Bullets[a-1] == null)
-            {
-                a++;
-                if (a == Bullets.Length)
+                
+                while (Bullets[a] == null)
                 {
-                    a = 0;
+                    a++;
+                    if (a == Bullets.Length)
+                    {
+                        
+                        a = 0;
+                    }
                 }
             }
+
+           
 
             if (a == Bullets.Length)
             {

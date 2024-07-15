@@ -66,12 +66,14 @@
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\BulletControl.cs" />
     <Compile Include="Assets\Scripts\weapon script\Bullet.cs" />
+    <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\weaponpickup.cs" />
+    <Compile Include="Assets\Scripts\BuffItemController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />

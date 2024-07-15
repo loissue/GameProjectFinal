@@ -25,14 +25,14 @@ public class GunInven : MonoBehaviour
     }
     public void GetBUllet(GameObject[] a)
     {
-        thisbulletlist = a;
+        //thisbulletlist = a;
         //GetFirstGun(thisbulletlist, bulletSlotPrefab);
 
     }
     public void GetFirstGun(GameObject[] bulletlist, GameObject firstgun)
     {
-        
-        
+
+        thisbulletlist = bulletlist;
         Debug.Log(bulletlist.Count());
         // Xoá tất cả các con hiện tại trong GunGrid
         foreach (Transform child in GunGrid.transform)
