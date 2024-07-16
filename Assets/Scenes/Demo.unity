@@ -21171,6 +21171,7 @@ GameObject:
   - component: {fileID: 2026892398}
   - component: {fileID: 2026892399}
   - component: {fileID: 2026892400}
+  - component: {fileID: 2026892401}
   m_Layer: 7
   m_Name: Idle_0
   m_TagString: Player
@@ -21417,6 +21418,22 @@ MonoBehaviour:
   GunGrid: {fileID: 535662519}
   bulletSlotPrefab: {fileID: 2106937994874269705, guid: 936aa5cba1d851a48b4fad2b6c256df5, type: 3}
   firstGunSlotPrefab: {fileID: 2106937994874269705, guid: 936aa5cba1d851a48b4fad2b6c256df5, type: 3}
+--- !u!114 &2026892401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026892389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16b0f80d38b28a4f87a7ed511cd7ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 400
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
 --- !u!4 &2027449719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8966734679898667424, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
