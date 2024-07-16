@@ -10,7 +10,8 @@ public class BuffItemController : MonoBehaviour
         Shield,
         Speed,
         Jump,
-        Eye
+        Eye,
+        Gravity
     }
     public ItemType Type;
 
@@ -29,6 +30,9 @@ public class BuffItemController : MonoBehaviour
                 break;
             case ItemType.Eye:
                 bufManager.ApplyEyeBuff(); 
+                break;
+            case ItemType.Gravity:
+                bufManager.ApplyGravityBuff(player);
                 break;
         }
         Destroy(gameObject);

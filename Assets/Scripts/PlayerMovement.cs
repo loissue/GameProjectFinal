@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f;// toc do nhay
     public float speed = 5f;
     bool isGrounded; // Biến kiểm tra xem player có đang đứng trên mặt đất không
-
+   public bool isRevert = false;
     /// </summary>
     // Start is called before the first frame update
     private Animator animator;
@@ -65,9 +65,16 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveVelo, rb.velocity.y);
 
         // Xử lý nhảy khi người chơi nhấn phím Space và player đang đứng trên mặt đất
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) )
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            if (!isRevert)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }
+            else
+            {
+                rb.gravityScale *= -1;
+            }
         }
     }
 }
