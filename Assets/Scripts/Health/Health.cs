@@ -18,6 +18,7 @@ public class Health : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
+    private Coroutine burnCoroutine;
 
     private void Awake()
     {
@@ -48,6 +49,26 @@ public class Health : MonoBehaviour
 
                 dead = true;
             }
+        }
+    }
+    
+    public void ApplyBurnEffect(float duration, float damagePerSecond)
+    {
+        if (burnCoroutine != null)
+            StopCoroutine(burnCoroutine);
+
+        burnCoroutine = StartCoroutine(Burn(duration, damagePerSecond));
+    }
+
+    private IEnumerator Burn(float duration, float damagePerSecond)
+    {
+        float elapsed = 0;
+
+        while (elapsed < duration)
+        {
+            TakeDamage(damagePerSecond * Time.deltaTime);
+            elapsed += Time.deltaTime;
+            yield return null;
         }
     }
     public void AddHealth(float _value)

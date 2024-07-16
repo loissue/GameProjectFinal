@@ -9,6 +9,10 @@ namespace EnemyS
         private float lifetime;
         private Animator anim;
         private BoxCollider2D coll;
+        
+        [Header("Burn Effect")]
+        [SerializeField] private float burnDuration = 3f;
+        [SerializeField] private float burnDamagePerSecond = 10f;
 
         private bool hit;
 
@@ -44,6 +48,11 @@ namespace EnemyS
                 hit = true;
                 base.OnTriggerEnter2D(collision); //Execute logic from parent script first
                 coll.enabled = false;
+                
+                if (collision.gameObject.tag == "Player")
+                {
+                    collision.GetComponent<Health>().ApplyBurnEffect(burnDuration, burnDamagePerSecond);
+                }
 
                 if (anim != null)
                     anim.SetTrigger("explode"); //When the object is a fireball explode it
