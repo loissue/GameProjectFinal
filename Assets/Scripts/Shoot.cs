@@ -56,13 +56,18 @@ public class Shoot : MonoBehaviour
                 
                 Shooting(Bullets[a]); // Assuming BulletList has a property Bullet of type GameObject
                 a++;
-                
+                if (a == Bullets.Length)
+                {
+
+                    a = 0;
+                }
                 while (Bullets[a] == null)
                 {
                     a++;
+                    Debug.Log(Bullets.Length);
                     if (a == Bullets.Length)
                     {
-                        
+
                         a = 0;
                     }
                 }

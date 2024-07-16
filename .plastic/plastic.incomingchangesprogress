@@ -1,0 +1,20 @@
+[
+  {
+    "MountId": "56e62dd7-241f-41e9-8c6b-dd4ca4513e62",
+    "AncestorCsetIds": [
+      6
+    ],
+    "SourceCsetId": 7,
+    "DestinationCsetId": 6,
+    "FileConflicts": [
+      {
+        "Path": "/Assets/Scripts/Shoot.cs",
+        "ItemId": 1207,
+        "ParentItemId": 191,
+        "BaseRevId": 3072,
+        "SourceRevId": 3792,
+        "DestinationRevId": 3072
+      }
+    ]
+  }
+]
