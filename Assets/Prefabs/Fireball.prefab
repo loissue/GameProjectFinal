@@ -103,6 +103,8 @@ MonoBehaviour:
   damage: 40
   speed: 5
   resetTime: 5
+  burnDuration: 3
+  burnDamagePerSecond: 10
 --- !u!61 &5744787399789426538
 BoxCollider2D:
   m_ObjectHideFlags: 0
