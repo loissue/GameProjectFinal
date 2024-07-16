@@ -4,8 +4,6 @@ using System.Linq;
 using UnityEngine;
 
 
-
-
 public class Shoot : MonoBehaviour
 {
     public Transform Gun;
@@ -24,40 +22,39 @@ public class Shoot : MonoBehaviour
     int a = 0;
     private bool isShooting = false;
     private float shootInterval = 1.0f; // Interval in seconds between shots
+
     void Start()
     {
         this.enabled = false;
-        
     }
-    
+
     // Update is called once per frame
     void Update()
     {
         Vector2 moupos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = moupos - (Vector2)Gun.position;
         gunFace();
-        
+
         if (Input.GetMouseButton(0) && !isShooting) // Check if mouse button is held down and if not already shooting
         {
             StartCoroutine(ShootCoroutine());
-            
         }
-
     }
+
     private IEnumerator ShootCoroutine()
     {
         isShooting = true;
 
         while (Input.GetMouseButton(0))
         {
-            
             if (Bullets[a] != null)
             {
+                Debug.Log("Shooting");
                 Shooting(Bullets[a]); // Assuming BulletList has a property Bullet of type GameObject
                 a++;
             }
 
-            while (Bullets[a-1] == null)
+            while (Bullets[a - 1] == null)
             {
                 a++;
                 if (a == Bullets.Length)
@@ -76,27 +73,22 @@ public class Shoot : MonoBehaviour
 
         isShooting = false;
     }
+
     public void getbulletlist(GameObject[] bulletLists)
     {
-       
         Bullets = bulletLists;
         //guninven.GetBUllet(Bullets);
     }
+
     void gunFace()
     {
         Gun.transform.right = direction;
     }
+
     void Shooting(GameObject bullet)
     {
-        
-            
-                
-                GameObject BulletIns = Instantiate(bullet, ShootPoint.position, ShootPoint.rotation);
-                BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
-                Destroy(BulletIns, 3);
-            
-            
-        
-        
+        GameObject BulletIns = Instantiate(bullet, ShootPoint.position, ShootPoint.rotation);
+        BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
+        Destroy(BulletIns, 3);
     }
 }

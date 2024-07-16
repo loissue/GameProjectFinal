@@ -22,16 +22,7 @@ public class MobSpawn : MonoBehaviour
         
         foreach (SpawnableObject spawnable in spawnableObjects)
         {
-            float randomValue = Random.Range(0f, 100f);
-            if (randomValue <= removegroundchance)
-            {
-                
-                    Destroy(gameObject);
-               
-                
-            }
-            if(randomValue > removegroundchance)
-            {
+            
                 
                 float randomValueEnemy = Random.Range(0f, 100f);
                 if (randomValueEnemy <= spawnable.spawnChance)
@@ -39,10 +30,6 @@ public class MobSpawn : MonoBehaviour
                     Vector3 spawnPosition = transform.position + Vector3.up * spawnHeightOffset;
                     Instantiate(spawnable.objectToSpawn, spawnPosition, Quaternion.identity);
                 }
-                
-            }
-            
-
         }
     }
-}
+} 
