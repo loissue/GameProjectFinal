@@ -12,13 +12,13 @@ public class HealthBarScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float maxhealth = enemy.getHealth();
+        float maxhealth = enemy.gameObject.GetComponent<Health>().currentHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthnow = enemy.getHealth();
+        healthnow = enemy.gameObject.GetComponent<Health>().currentHealth;
         
     }
 }

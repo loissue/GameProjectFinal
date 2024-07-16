@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
-    public float health = 100f; // Sức khỏe của đối tượng Enemy
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,19 +12,6 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
     
-    public void TakeDamage(float amount)
-    {
-        health -= amount; // Giảm sức khỏe khi bị trúng đạn
-        
-        if (health <= 0)
-        {
-            Destroy(gameObject); // Gọi phương thức Die khi sức khỏe <= 0
-        }
-    }
-    public float getHealth()
-    {
-        return health;
-    }
     public float moveSpeed = 2f; // Tốc độ di chuyển của enemy
     //public Transform leftBoundary; // Điểm biên trái
     //public Transform rightBoundary; // Điểm biên phải
