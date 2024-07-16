@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource vfxAudioSource;
     public AudioClip backgroudClip;
     public AudioClip itemClip;
+    public AudioClip eyeClip;
+    public AudioClip speedClip;
 
     void Start()
     {
