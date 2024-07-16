@@ -143,5 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd29cbcdabe7b049a992fc9356177bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bufManager: {fileID: 6436410840800002005, guid: da090ae3918defd4bb191157437a446e, type: 3}
+  bufManager: {fileID: 748174404356783594, guid: a8b1c3a26b8137a4ba443a5a36947717, type: 3}
+  audioManager: {fileID: 4792448834107083799, guid: d4f46e9ba8e710f44ad2c1801da1de6d, type: 3}
   Type: 2
