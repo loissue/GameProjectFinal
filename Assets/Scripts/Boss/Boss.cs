@@ -7,24 +7,24 @@ namespace Boss
     {
         [Header("Attack Settings")] [SerializeField]
         private float timeBetweenAttacks;
-
         [SerializeField] private GameObject projectilePrefab;
         [SerializeField] private Transform projectileSpawnPoint;
 
-        [Header("Spray Attack Settings")] [SerializeField]
-        private int sprayProjectilesCount;
+        [Header("Downward Fan Attack Settings")] [SerializeField]
+        private int downwardProjectilesCount;
+        [SerializeField] private float downwardAngle;
 
-        [SerializeField] private float sprayAngle;
+        [Header("Spring  Spray Attack Settings")] [SerializeField]
+        private int springSprayProjectilesCount;
+        [SerializeField] private float springSprayAngle;
 
-        [Header("180 Degree Attack Settings")] [SerializeField]
-        private int arcProjectilesCount;
-
-        [SerializeField] private float arcAngle;
-
-        private bool isAttacking;
-
+        
+        //References
+        private Animator anim;
+        
         private void Start()
         {
+            anim = GetComponent<Animator>();
             StartCoroutine(AttackRoutine());
         }
 
@@ -38,38 +38,45 @@ namespace Boss
                 switch (attackType)
                 {
                     case 0:
-                        StartCoroutine(SprayAttack());
+                        StartCoroutine(DownwardSprayAttack());
+                        Debug.Log("Downward Spray Attack");
                         break;
                     case 1:
-                        StartCoroutine(ArcAttack());
+                        StartCoroutine(SpringDownwardSprayAttack());
+                        Debug.Log("Spring Downward Spray Attack");
                         break;
                 }
             }
         }
-
-        private IEnumerator SprayAttack()
+        
+        
+        private IEnumerator SpringDownwardSprayAttack()
         {
-            float angleStep = sprayAngle / (sprayProjectilesCount - 1);
-            float startAngle = -sprayAngle / 2;
+            float angleStep = springSprayAngle / (springSprayProjectilesCount - 1);
+            float startAngle = -springSprayAngle / 2;
 
-            for (int i = 0; i < sprayProjectilesCount; i++)
+            for (int i = 0; i < springSprayProjectilesCount; i++)
             {
+                yield return new WaitForSeconds(0.2f);
                 float angle = startAngle + i * angleStep;
-                ShootProjectile(angle);
+                anim.SetTrigger("attack");
+                ShootProjectile(angle - 180); // Adjust angle to shoot downward
             }
 
             yield return null; // Adjust timing if needed
         }
 
-        private IEnumerator ArcAttack()
-        {
-            float angleStep = arcAngle / (arcProjectilesCount - 1);
-            float startAngle = -arcAngle / 2;
+        
 
-            for (int i = 0; i < arcProjectilesCount; i++)
+        private IEnumerator DownwardSprayAttack()
+        {
+            float angleStep = downwardAngle / (downwardProjectilesCount - 1);
+            float startAngle = -downwardAngle / 2;
+
+            for (int i = 0; i < downwardProjectilesCount; i++)
             {
                 float angle = startAngle + i * angleStep;
-                ShootProjectile(angle);
+                ShootProjectile(angle - 180); // Adjust angle to shoot downward
             }
 
             yield return null; // Adjust timing if needed
@@ -79,8 +86,7 @@ namespace Boss
         {
             GameObject projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
             projectile.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            projectile.GetComponent<Rigidbody2D>()
-                .AddForce(projectile.transform.up * 10, ForceMode2D.Impulse); // Adjust speed
+            projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.up * 10, ForceMode2D.Impulse); // Adjust speed
         }
     }
 }
