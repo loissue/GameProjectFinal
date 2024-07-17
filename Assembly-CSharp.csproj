@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Boss\Boss.cs" />
     <Compile Include="Assets\Scripts\EnemyS\HealthBarScript.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\GunInven.cs" />
     <Compile Include="Assets\Scripts\Terrain\SpawnMonster.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Scripts\Terrain\Replace.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\DropItem.cs" />
     <Compile Include="Assets\Scripts\Terrain\ChoseBiome.cs" />
     <Compile Include="Assets\Scripts\EnemyS\MeleeEnemy.cs" />
     <Compile Include="Assets\Scripts\EnemyS\EnemyProjectile.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Enemy\SnowManBehavior.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\Boss\BossProjectile.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\Item.cs" />
     <Compile Include="Assets\Scripts\EnemyS\RangedEnemy.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
