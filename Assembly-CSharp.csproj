@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\EnemyS\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\BulletControl.cs" />
     <Compile Include="Assets\Scripts\weapon script\Bullet.cs" />
+    <Compile Include="Assets\Scripts\weapon script\FireBullet.cs" />
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventorySlot.cs" />

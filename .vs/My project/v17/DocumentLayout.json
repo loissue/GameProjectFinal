@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|d:\\my project\\assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\guninven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\guninven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|d:\\my project\\assets\\scripts\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\magazin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\guninven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\guninven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|d:\\my project\\assets\\scripts\\buffitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\buffitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\playerinteract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +47,8 @@
       "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\weaponpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\inventoryscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\itemscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\enemys\\healthbarscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|solutionrelative:assets\\scripts\\inventoryscript\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01581593-00CC-05E8-4BB5-DE9370206819}|Assembly-CSharp.Player.csproj|D:\\My project\\assets\\scripts\\\u00FAicript\\timeremaincount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,11 +81,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
@@ -94,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "Item.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\InventoryScript\\Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\Item.cs",
@@ -103,7 +107,8 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-07T07:24:57.262Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,7 +118,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Magazin.cs",
               "ToolTip": "D:\\My project\\Assets\\Scripts\\Magazin.cs",
               "RelativeToolTip": "Assets\\Scripts\\Magazin.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCcAAAAbAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBYAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T05:30:18.404Z",
               "IsPinned": true,
@@ -121,20 +126,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GunInven.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\InventoryScript\\GunInven.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\GunInven.cs",
               "ToolTip": "D:\\My project\\Assets\\Scripts\\InventoryScript\\GunInven.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\GunInven.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAwwBUAAAARAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAA9wCsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T09:03:07.341Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "BuffItemController.cs",
+              "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\BuffItemController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BuffItemController.cs",
+              "ToolTip": "D:\\My project\\Assets\\Scripts\\BuffItemController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BuffItemController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T15:49:54.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "PlayerInteract.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\PlayerInteract.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerInteract.cs",
@@ -146,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "weaponpickup.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\weaponpickup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\weaponpickup.cs",
@@ -158,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "MobSpawn.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\MobSpawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MobSpawn.cs",
@@ -170,31 +189,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "HealthBarScript.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
               "ToolTip": "D:\\My project\\Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyS\\HealthBarScript.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAcAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T05:47:32.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "InventoryScript.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
               "ToolTip": "D:\\My project\\Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventoryScript\\InventoryScript.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAIwFIAAABWAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwEwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T08:46:38.685Z"
+              "WhenOpened": "2024-06-07T08:46:38.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ItemPickUp.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\ItemPickUp.cs",
@@ -206,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BulletControl.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\BulletControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BulletControl.cs",
@@ -218,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "TimeRemainCount.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\\u00DAIcript\\TimeRemainCount.cs",
@@ -230,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ItemScript.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\InventoryScript\\ItemScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryScript\\ItemScript.cs",
@@ -242,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Bullet.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -254,20 +274,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Shoot.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\Shoot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Shoot.cs",
               "ToolTip": "D:\\My project\\Assets\\Scripts\\Shoot.cs",
               "RelativeToolTip": "Assets\\Scripts\\Shoot.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAcwFEAAAAeAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAtwEcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-11T15:39:03.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\My project\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
@@ -279,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CollabHistoryWindow.cs",
               "DocumentMoniker": "C:\\Users\\Truong Quang Loc\\My project\\Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",
               "ToolTip": "C:\\Users\\Truong Quang Loc\\My project\\Library\\PackageCache\\com.unity.collab-proxy@1.2.15\\Editor\\Collab\\CollabHistoryWindow.cs",

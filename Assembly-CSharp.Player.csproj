@@ -64,20 +64,29 @@
     <Compile Include="Assets\Scripts\InventoryScript\GunInven.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\BulletControl.cs" />
     <Compile Include="Assets\Scripts\weapon script\Bullet.cs" />
+    <Compile Include="Assets\Scripts\weapon script\FireBullet.cs" />
+    <Compile Include="Assets\Scripts\Health\Health.cs" />
+    <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\EnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\weaponpickup.cs" />
+    <Compile Include="Assets\Scripts\BuffItemController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\Item.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\RangedEnemy.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Magazin.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventoryScript.cs" />
   </ItemGroup>
   <ItemGroup>
