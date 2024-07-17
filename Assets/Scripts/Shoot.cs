@@ -15,7 +15,7 @@ public class Shoot : MonoBehaviour
     public GameObject[] Bullets;
     int a = 0;
     private bool isShooting = false;
-    private float shootInterval = 1.0f; // Interval in seconds between shots
+    public  float shootInterval = 1.0f; // Interval in seconds between shots
 
     void Start()
     {

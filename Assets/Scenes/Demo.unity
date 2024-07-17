@@ -3423,6 +3423,7 @@ MonoBehaviour:
   ShootPoint: {fileID: 697077169}
   guninven: {fileID: 2026892400}
   Bullets: []
+  shootInterval: 0.01
 --- !u!114 &329319356
 MonoBehaviour:
   m_ObjectHideFlags: 0
