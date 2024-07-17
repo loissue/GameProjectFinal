@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 743835228832141417}
   - component: {fileID: 1136795926166690694}
   - component: {fileID: 4437375216222068704}
+  - component: {fileID: 7393495076445813081}
   m_Layer: 3
   m_Name: Ground
   m_TagString: Ground
@@ -150,3 +151,16 @@ MonoBehaviour:
     spawnChance: 3.6
   - objectToSpawn: {fileID: 5047076128567403307, guid: dfca3ae0cad5a2f489714fa32528f9f4, type: 3}
     spawnChance: 2.4
+--- !u!114 &7393495076445813081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}

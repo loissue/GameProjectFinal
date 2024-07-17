@@ -3,6 +3,8 @@ using UnityEngine;
 public class ChoseBiome : MonoBehaviour
 {
     public static ChoseBiome Instance;
+    [SerializeField]
+    public int level;
 
     [System.Serializable]
     public struct PrefabWithPercentage
@@ -33,13 +35,10 @@ public class ChoseBiome : MonoBehaviour
         InitializeChosenList();
     }
 
-    void InitializeChosenList()
+    public void InitializeChosenList()
     {
-        if (chosenList == null || chosenList.Length == 0)
-        {
             chosenList = ChooseList();
             DebugChosenList();
-        }
     }
 
     PrefabWithPercentage[] ChooseList()
@@ -48,8 +47,7 @@ public class ChoseBiome : MonoBehaviour
 
         while (list == null || list.Length == 0)
         {
-            int randomListIndex = Random.Range(0, 3);
-            switch (randomListIndex)
+            switch (level)
             {
                 case 0:
                     list = list1;

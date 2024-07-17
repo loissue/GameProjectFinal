@@ -5391,6 +5391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 541063340}
   - component: {fileID: 541063339}
+  - component: {fileID: 541063341}
   m_Layer: 0
   m_Name: BiomeChose
   m_TagString: Untagged
@@ -5410,6 +5411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc495f75eee3bc4dac55a116e925c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
   list1:
   - prefab: {fileID: 7555581044122428436, guid: cadf8656918f30f42a46439724d07cb8, type: 3}
     percentage: 20
@@ -5478,6 +5480,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541063341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541063338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9adcecb32cbfee46bc2a030f3954fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replaceKey: 114
 --- !u!1001 &545611897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23409,11 +23424,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7626891904705800062, guid: 0d74cc2d77af6a94087a03cacbb3d71f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.82
+      value: 23.77
       objectReference: {fileID: 0}
     - target: {fileID: 7626891904705800062, guid: 0d74cc2d77af6a94087a03cacbb3d71f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.08
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 7626891904705800062, guid: 0d74cc2d77af6a94087a03cacbb3d71f, type: 3}
       propertyPath: m_LocalPosition.z

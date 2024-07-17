@@ -437,6 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333900276114211296}
+  - component: {fileID: 502497981367154185}
   m_Layer: 3
   m_Name: Hole
   m_TagString: Ground
@@ -463,3 +464,16 @@ Transform:
   - {fileID: 3678130708038988360}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 1.111, z: 0}
+--- !u!114 &502497981367154185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
