@@ -12,7 +12,7 @@ public class BulletControl : MonoBehaviour
     private InventoryScript.BulletList currentItem; // Item hiện tại mà player đang đứng gần
 
     private GameObject currentItemObject; // Đối tượng item hiện tại mà player đang đứng gần
-    private string tag;
+    private string tags;
     void Start()
     {
         pickupText.SetActive(false); // Ban đầu ẩn thông báo
