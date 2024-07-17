@@ -3,15 +3,17 @@ using UnityEngine;
 
 public class BuffItemController : MonoBehaviour
 {
-    public BufManager bufManager; 
-   public AudioManager audioManager;
+    private BufManager buffManager; 
+   private AudioManager audioManager;
     public enum ItemType
     {
         Shield,
         Speed,
         Jump,
         Eye,
-        Gravity
+        Gravity,
+        Teleport,
+        Freeze
     }
     public ItemType Type;
 
@@ -20,20 +22,30 @@ public class BuffItemController : MonoBehaviour
         switch (Type)
         {
             case ItemType.Shield:
-                bufManager.ApplyShieldBuff();
+                buffManager.ApplyShieldBuff();
                 break;
             case ItemType.Speed:
-                bufManager.ApplySpeedBuff(player); 
+                buffManager.ApplySpeedBuff(player);
+                audioManager.PlaySfx(audioManager.speedClip);
                 break;
             case ItemType.Jump:
-                bufManager.ApplyJumpBuff(player); 
+                buffManager.ApplyJumpBuff(player); 
                 break;
             case ItemType.Eye:
-                bufManager.ApplyEyeBuff(); 
+                buffManager.ApplyEyeBuff();
+                audioManager.PlaySfx(audioManager.eyeClip);
                 break;
             case ItemType.Gravity:
-                bufManager.ApplyGravityBuff(player);
+                buffManager.ApplyGravityBuff(player);
+                player.GetComponent<Rigidbody2D>().gravityScale *= 2;
                 break;
+            case ItemType.Teleport:
+                buffManager.ApplyTeleportBuff(player);
+                break;
+            case ItemType.Freeze:
+                buffManager.ApplyFreezeBuff();
+                break;
+
         }
         Destroy(gameObject);
     }
@@ -42,12 +54,12 @@ public class BuffItemController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            audioManager.PlaySfx(audioManager.itemClip);
             OnItemPickUp(collision.gameObject);
         }
     }
     private void Start()
     {
         audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        buffManager = GameObject.FindGameObjectWithTag("BuffManager").GetComponent<BufManager>();
     }
 }
