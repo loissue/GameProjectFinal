@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using EnemyS;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -46,8 +47,11 @@ public class Health : MonoBehaviour
                 //Deactivate all attached component classes
                 foreach (Behaviour component in components)
                     component.enabled = false;
-
+                    
                 dead = true;
+                var dropItem = GetComponent<DropItem>();
+                if (dropItem != null)
+                    dropItem.spawnBuff(gameObject.transform.position);
             }
         }
     }
