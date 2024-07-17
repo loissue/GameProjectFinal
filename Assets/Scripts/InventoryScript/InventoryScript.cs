@@ -20,7 +20,7 @@ public class InventoryScript : MonoBehaviour
 
     private void Start()
     {
-        inventoryCanvas.SetActive(true);
+        inventoryCanvas.SetActive(false);
     }
 
     void Update()

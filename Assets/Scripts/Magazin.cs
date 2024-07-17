@@ -15,12 +15,12 @@ public class Magazin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //giveoutMagazin();
-        Bullets = new GameObject[4];
-        Bullets[0] = bullet1;
-        Bullets[1] = bullet2;
-        Bullets[2] = bullet1;
-        Bullets[3] = bullet1;
+        // //giveoutMagazin();
+        // Bullets = new GameObject[4];
+        // Bullets[0] = bullet1;
+        // Bullets[1] = bullet2;
+        // Bullets[2] = bullet1;
+        // Bullets[3] = bullet1;
         
 
     }
