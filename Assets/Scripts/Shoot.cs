@@ -57,11 +57,25 @@ public class Shoot : MonoBehaviour
             while (Bullets[a - 1] == null)
             {
                 a++;
+
                 if (a == Bullets.Length)
                 {
+
                     a = 0;
                 }
+                while (Bullets[a] == null)
+                {
+                    a++;
+                    Debug.Log(Bullets.Length);
+                    if (a == Bullets.Length)
+                    {
+
+                        a = 0;
+                    }
+                }
             }
+
+           
 
             if (a == Bullets.Length)
             {

@@ -46,7 +46,7 @@ public class ManualPercentageReplaceEntity : MonoBehaviour
             }
         }
 
-        Debug.LogError(randomValue);
+        
 
         if (selectedPrefab != null)
         {

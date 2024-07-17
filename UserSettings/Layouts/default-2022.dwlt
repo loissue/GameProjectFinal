@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_MinSize: {x: 600, y: 350}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Unity Version Control
+    m_Text: 'Unity Version Control  '
     m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
