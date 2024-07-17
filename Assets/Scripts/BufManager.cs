@@ -27,6 +27,12 @@ public class BufManager : MonoBehaviour
     [Header("Buff Gravity Revert")]
     public float timeGravity = 10f;
     public Image gravityImage;
+    [Header("Buff Teleport")]
+    public float timeTeleport = 10f;
+    public Image teleportImage;
+    [Header("Buff TimeFreeze")]
+    public float timeFreeze = 10f;
+    public Image freezeImage;
     private void Start()
     {
         HideAllImages();
@@ -39,6 +45,8 @@ public class BufManager : MonoBehaviour
         jumpImage.gameObject.SetActive(false);
         shieldImage.gameObject.SetActive(false);
         gravityImage.gameObject.SetActive(false);
+        teleportImage.gameObject.SetActive(false);
+        freezeImage.gameObject.SetActive(false);
     }
 
     public void ApplyGravityBuff(GameObject player)
@@ -51,7 +59,7 @@ public class BufManager : MonoBehaviour
             StartCoroutine(ApplyBuff(timeGravity, gravityImage, () =>
             {
                 playerMove.isRevert = false;
-                player.GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(player.GetComponent<Rigidbody2D>().gravityScale); 
+                player.GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(player.GetComponent<Rigidbody2D>().gravityScale)/2; 
             }));
         }
         speedImage.gameObject.SetActive(false);
@@ -105,5 +113,26 @@ public class BufManager : MonoBehaviour
         }
         image.gameObject.SetActive(false);
         resetAction?.Invoke(); 
+    }
+
+    public void ApplyTeleportBuff(GameObject player)
+    {
+        teleportImage.gameObject.SetActive(true);
+        PlayerMovement playerMove = player.GetComponent<PlayerMovement>();
+        if (playerMove != null)
+        {
+            playerMove.isTeleport = true;
+            StartCoroutine(ApplyBuff(timeTeleport, teleportImage, () =>
+            {
+                playerMove.isTeleport = false;
+            }));
+        }
+        teleportImage.gameObject.SetActive(false);
+    }
+    public void ApplyFreezeBuff()
+    {
+        freezeImage.gameObject.SetActive(true);
+        StartCoroutine(ApplyBuff(timeFreeze, freezeImage, () => Time.timeScale=0.4f));
+        freezeImage.gameObject.SetActive(false);
     }
 }

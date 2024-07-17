@@ -11,6 +11,8 @@ TagManager:
   - Bullet
   - AudioManager
   - Bullet
+  - Enemy
+  - BuffManager
   layers:
   - Default
   - TransparentFX

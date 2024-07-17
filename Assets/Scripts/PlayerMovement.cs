@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     bool isGrounded; // Biến kiểm tra xem player có đang đứng trên mặt đất không
    public bool isRevert = false;
+    public bool isTeleport = false;
+    private bool directionLeft = true;
     /// </summary>
     // Start is called before the first frame update
     private Animator animator;
@@ -25,25 +27,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Lấy đầu vào từ bàn phím
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
-        // Thiết lập các parameters của Animator
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        
-
-
             if (movement.sqrMagnitude > 0)
             {
                 animator.SetBool("IsWalking", true);
                 if (Input.GetKeyDown(KeyCode.A))
                 {
                  animator.SetBool("LeftWalk", true);
+                directionLeft = true;
                 }
                 if (Input.GetKeyDown(KeyCode.D))
                 {
                  animator.SetBool("RightWalk", true);
-                 }
+                directionLeft = false;
+            }
                 
             }
             else
@@ -51,30 +50,38 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("IsWalking", false);
                 animator.SetBool("LeftWalk", false);
                 animator.SetBool("RightWalk", false);
-
             }
-        
-        
-        // Kiểm tra xem player có đang đứng trên mặt đất không
         isGrounded = Physics2D.OverlapCircle(transform.position, 2f, LayerMask.GetMask("Ground"));
-        
         float moveInput = Input.GetAxisRaw("Horizontal");
-
         float moveVelo = moveInput*movespeed;
-
         rb.velocity = new Vector2(moveVelo, rb.velocity.y);
-
-        // Xử lý nhảy khi người chơi nhấn phím Space và player đang đứng trên mặt đất
         if (Input.GetKeyDown(KeyCode.Space) )
         {
-            if (!isRevert)
+            if (isTeleport)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                StartCoroutine(TeleportWithDelay());
             }
-            else
+            else if(isRevert)
             {
                 rb.gravityScale *= -1;
             }
+            else if (isGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+            }
+        }
+    }
+    IEnumerator TeleportWithDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (directionLeft)
+        {
+            transform.position += Vector3.left * 5f;
+        }
+        else
+        {
+            transform.position += Vector3.right * 5f;
         }
     }
 }
