@@ -1,48 +1,53 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using Cinemachine;
 using UnityEngine;
 
 public class BuffItemController : MonoBehaviour
 {
-    // Start is called before the first frame update
-   // private AudioManager audioManager;
+    public BufManager bufManager; 
+   public AudioManager audioManager;
     public enum ItemType
     {
         Shield,
         Speed,
-        Jump
+        Jump,
+        Eye,
+        Gravity
     }
     public ItemType Type;
-    private void Awake()
-    {
-    //    audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
-    }
-   
+
     private void OnItemPickUp(GameObject player)
     {
         switch (Type)
         {
             case ItemType.Shield:
+                bufManager.ApplyShieldBuff();
                 break;
             case ItemType.Speed:
-                player.GetComponent<PlayerMovement>().movespeed = 30f;
+                bufManager.ApplySpeedBuff(player); 
                 break;
             case ItemType.Jump:
-                player.GetComponent<PlayerMovement>().jumpForce = 30f;
+                bufManager.ApplyJumpBuff(player); 
                 break;
-
-
-
+            case ItemType.Eye:
+                bufManager.ApplyEyeBuff(); 
+                break;
+            case ItemType.Gravity:
+                bufManager.ApplyGravityBuff(player);
+                break;
         }
         Destroy(gameObject);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            //audioManager.PlaySfx(audioManager.itemClip);
+            audioManager.PlaySfx(audioManager.itemClip);
             OnItemPickUp(collision.gameObject);
-
         }
+    }
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 }

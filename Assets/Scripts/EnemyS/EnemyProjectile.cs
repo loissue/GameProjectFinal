@@ -6,11 +6,13 @@ namespace EnemyS
     {
         [SerializeField] private float speed;
         [SerializeField] private float resetTime;
-        [SerializeField] private float burnDuration = 3f; // Duration of the burn effect
-        [SerializeField] private float burnDamagePerSecond = 5f; // Damage per second of the burn effect
         private float lifetime;
         private Animator anim;
         private BoxCollider2D coll;
+        
+        [Header("Burn Effect")]
+        [SerializeField] private float burnDuration = 3f;
+        [SerializeField] private float burnDamagePerSecond = 10f;
 
         private bool hit;
 
@@ -47,7 +49,6 @@ namespace EnemyS
                 base.OnTriggerEnter2D(collision); //Execute logic from parent script first
                 coll.enabled = false;
                 
-                // Apply burn effect to the player
                 if (collision.gameObject.tag == "Player")
                 {
                     collision.GetComponent<Health>().ApplyBurnEffect(burnDuration, burnDamagePerSecond);
