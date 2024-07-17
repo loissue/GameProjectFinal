@@ -1,19 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-
 
 public class Shoot : MonoBehaviour
 {
     public Transform Gun;
-
     public float damage = 10f;
-
     Vector2 direction;
-
     public GameObject Bullet;
-
     public float BulletSpeed;
     public Magazin Magazin;
     public Transform ShootPoint;
@@ -49,33 +43,32 @@ public class Shoot : MonoBehaviour
         {
             if (Bullets[a] != null)
             {
-                Debug.Log("Shooting");
-                Shooting(Bullets[a]); // Assuming BulletList has a property Bullet of type GameObject
-                a++;
-            }
-
-            while (Bullets[a - 1] == null)
-            {
-                a++;
-
-                if (a == Bullets.Length)
-                {
-
-                    a = 0;
-                }
-                while (Bullets[a] == null)
+                if (Bullets[a].GetComponent<CurveBullet>() != null)
                 {
                     a++;
-                    Debug.Log(Bullets.Length);
-                    if (a == Bullets.Length)
+                    if (a < Bullets.Length && Bullets[a] != null)
                     {
-
-                        a = 0;
+                        Debug.Log("Shooting with ZigZag");
+                        Shooting(Bullets[a], true);
+                        a++;
                     }
+                }
+                else
+                {
+                    Debug.Log("Shooting");
+                    Shooting(Bullets[a], false);
+                    a++;
                 }
             }
 
-           
+            while (a < Bullets.Length && Bullets[a] == null)
+            {
+                a++;
+                if (a == Bullets.Length)
+                {
+                    a = 0;
+                }
+            }
 
             if (a == Bullets.Length)
             {
@@ -91,7 +84,6 @@ public class Shoot : MonoBehaviour
     public void getbulletlist(GameObject[] bulletLists)
     {
         Bullets = bulletLists;
-        //guninven.GetBUllet(Bullets);
     }
 
     void gunFace()
@@ -99,10 +91,26 @@ public class Shoot : MonoBehaviour
         Gun.transform.right = direction;
     }
 
-    void Shooting(GameObject bullet)
+    void Shooting(GameObject bullet, bool zigzag)
     {
         GameObject BulletIns = Instantiate(bullet, ShootPoint.position, ShootPoint.rotation);
-        BulletIns.GetComponent<Rigidbody2D>().AddForce(BulletIns.transform.right * BulletSpeed);
-        Destroy(BulletIns, 3);
+        Rigidbody2D rb = BulletIns.GetComponent<Rigidbody2D>();
+
+        if (rb == null)
+        {
+            rb = BulletIns.AddComponent<Rigidbody2D>();
+        }
+
+        if (zigzag)
+        {
+            var zigzagMovement = BulletIns.AddComponent<ZigZagMovement>();
+            zigzagMovement.BulletSpeed = BulletSpeed; // Set the BulletSpeed
+        }
+        else
+        {
+            rb.AddForce(BulletIns.transform.right * BulletSpeed, ForceMode2D.Impulse);
+        }
+
+        Destroy(BulletIns, 3); // Destroy after 3 seconds to ensure it has enough time to move
     }
 }
