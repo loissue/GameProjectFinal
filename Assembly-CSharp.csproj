@@ -71,6 +71,8 @@
     <Compile Include="Assets\Scripts\Terrain\Breakable.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\EnemyS\EnemyDamage.cs" />
+    <Compile Include="Assets\Scripts\weapon script\ZigZagMovement.cs" />
+    <Compile Include="Assets\Scripts\weapon script\Curve Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletControl.cs" />
     <Compile Include="Assets\Scripts\weapon script\Bullet.cs" />
     <Compile Include="Assets\Scripts\weapon script\FireBullet.cs" />
