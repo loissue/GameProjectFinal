@@ -13,6 +13,7 @@ TagManager:
   - Bullet
   - Enemy
   - BuffManager
+  - buffbullet
   layers:
   - Default
   - TransparentFX

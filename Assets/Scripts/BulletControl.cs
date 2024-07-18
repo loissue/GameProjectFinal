@@ -20,7 +20,7 @@ public class BulletControl : MonoBehaviour
 
     void Update()
     {
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tag== "Bullet")
+        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags== "Bullet")
         {
             InventoryScript.AddItemToInventory(currentItem); // Thêm item vào inventory
             isNearItem = false; // Đặt lại biến kiểm tra
@@ -30,7 +30,7 @@ public class BulletControl : MonoBehaviour
             currentItemObject.SetActive(false);
 
         }
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tag == "Weapon")
+        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
         {
             
             isNearItem = false; // Đặt lại biến kiểm tra
@@ -49,7 +49,7 @@ public class BulletControl : MonoBehaviour
             InventoryScript.BulletList item = other.gameObject.GetComponent<Item>().bulletList; // Giả sử item có component chứa thông tin về BulletList
             if (item != null)
             {
-                tag = "Bullet";
+                tags = "Bullet";
                 currentItem = item;
                 currentItemObject = other.gameObject;
                 isNearItem = true;
@@ -59,7 +59,7 @@ public class BulletControl : MonoBehaviour
         if (other.CompareTag("Weapon"))
         {
                 isNearItem = true;
-                tag = "Weapon";
+                tags = "Weapon";
                 currentItemObject = other.gameObject;
             
             
