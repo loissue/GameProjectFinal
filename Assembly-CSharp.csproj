@@ -12,7 +12,8 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5064F524-7439-0D77-84F9-9C2B76886E2F}</ProjectGuid>
+    <ProjectGuid>{8ebaf730-7f9d-c6b9-553b-a76abc22d023}</ProjectGuid>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,6 +55,7 @@
     <Compile Include="Assets\Scripts\Terrain\ReplaceNewChunk.cs" />
     <Compile Include="Assets\Enemy\SnowBallBehavior.cs" />
     <Compile Include="Assets\Scripts\Terrain\NewLevel.cs" />
+    <Compile Include="Assets\Scripts\EnemyS\FlyingEnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\EnemyS\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\weapon script\ZigZagMovement.cs" />
     <Compile Include="Assets\Scripts\weapon script\Curve Bullet.cs" />

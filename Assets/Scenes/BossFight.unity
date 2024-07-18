@@ -1164,6 +1164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc495f75eee3bc4dac55a116e925c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
   list1:
   - prefab: {fileID: 7555581044122428436, guid: cadf8656918f30f42a46439724d07cb8, type: 3}
     percentage: 20

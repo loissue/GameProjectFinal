@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 1317468698988919537}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc12f754d72435ba202f01e7e19dd0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 4
   projectilePrefab: {fileID: 7587035478169890998, guid: 720aea6880b2db245a6b55a983037803, type: 3}
   projectileSpawnPoint: {fileID: 8683337671388551679}
   downwardProjectilesCount: 20
