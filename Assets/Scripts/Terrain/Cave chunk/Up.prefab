@@ -532,7 +532,7 @@ GameObject:
   - component: {fileID: 743835228832141417}
   - component: {fileID: 1136795926166690694}
   - component: {fileID: 4437375216222068704}
-  - component: {fileID: 3261322190334411059}
+  - component: {fileID: 5186112961530691146}
   m_Layer: 3
   m_Name: Up
   m_TagString: Ground
@@ -676,7 +676,7 @@ MonoBehaviour:
     spawnChance: 3.6
   - objectToSpawn: {fileID: 5047076128567403307, guid: dfca3ae0cad5a2f489714fa32528f9f4, type: 3}
     spawnChance: 2.4
---- !u!114 &3261322190334411059
+--- !u!114 &5186112961530691146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -685,9 +685,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7555581044122428436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec47fc9df8880b1478cea1b55fbae30b, type: 3}
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
 --- !u!1 &8029730810948576796
 GameObject:
   m_ObjectHideFlags: 0

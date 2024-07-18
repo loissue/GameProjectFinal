@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BulletControl : MonoBehaviour
 {
+    private RandomUpgrade chestopen;
     public InventoryScript InventoryScript;
     public GameObject pickupText; // Tham chiếu tới UI Text để hiển thị thông báo
     public PlayerInteract playerInteract;
@@ -20,7 +21,7 @@ public class BulletControl : MonoBehaviour
 
     void Update()
     {
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags== "Bullet")
+        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Bullet")
         {
             InventoryScript.AddItemToInventory(currentItem); // Thêm item vào inventory
             isNearItem = false; // Đặt lại biến kiểm tra
@@ -39,6 +40,14 @@ public class BulletControl : MonoBehaviour
             
             
 
+        }
+
+        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Chest")
+        {
+
+            isNearItem = false; // Đặt lại biến kiểm tra
+            chestopen.RandomDrop();
+            chestopen = null;
         }
 
     }
@@ -61,8 +70,17 @@ public class BulletControl : MonoBehaviour
                 isNearItem = true;
                 tags = "Weapon";
                 currentItemObject = other.gameObject;
-            
-            
+            pickupText.SetActive(true);
+
+        }
+        RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
+        if (other.CompareTag("Chest"))
+        {
+            isNearItem = true;
+            tags = "Chest";
+            currentItemObject = other.gameObject;
+            pickupText.SetActive(true);
+            chestopen = upgrade;
         }
     }
 
@@ -79,7 +97,14 @@ public class BulletControl : MonoBehaviour
                 pickupText.SetActive(false); // Ẩn thông báo khi player rời xa item
             }
         }
-        
+        RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
+        if (other.CompareTag("Chest"))
+        {
+                isNearItem = false;
+                pickupText.SetActive(false);
+            chestopen = null;    
+        }
+
     }
 
     

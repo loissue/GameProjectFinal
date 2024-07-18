@@ -696,7 +696,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2313752327334873492}
-  - component: {fileID: 8552992635518684368}
   - component: {fileID: 4213087792390128966}
   m_Layer: 0
   m_Name: GameObject
@@ -724,20 +723,6 @@ Transform:
   - {fileID: 614462746423801306}
   m_Father: {fileID: 333900276114211296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8552992635518684368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5888974927871593489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd05332a64c2a442b67e8c95757080d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 5505956477227735175, guid: 71983516bdd4dd14ca88ec2ceb790a0f, type: 3}
-  spawnHeightOffset: 1
 --- !u!68 &4213087792390128966
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -947,6 +932,7 @@ GameObject:
   - component: {fileID: 1136795926166690694}
   - component: {fileID: 4437375216222068704}
   - component: {fileID: 7475480755635934072}
+  - component: {fileID: 3352117425975801528}
   m_Layer: 3
   m_Name: Up 4
   m_TagString: Ground
@@ -1088,6 +1074,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3352117425975801528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
 --- !u!1 &8257102129242751042
 GameObject:
   m_ObjectHideFlags: 0

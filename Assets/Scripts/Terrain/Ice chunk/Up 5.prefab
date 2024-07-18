@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427281461816376700}
-  - component: {fileID: 8968048823971679562}
   - component: {fileID: 7861011358113129412}
   m_Layer: 0
   m_Name: GameObject
@@ -37,20 +36,6 @@ Transform:
   - {fileID: 614462746423801306}
   m_Father: {fileID: 333900276114211296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8968048823971679562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83998245505568842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd05332a64c2a442b67e8c95757080d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 5505956477227735175, guid: 71983516bdd4dd14ca88ec2ceb790a0f, type: 3}
-  spawnHeightOffset: 1
 --- !u!68 &7861011358113129412
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -619,6 +604,7 @@ GameObject:
   - component: {fileID: 1136795926166690694}
   - component: {fileID: 4437375216222068704}
   - component: {fileID: 7475480755635934072}
+  - component: {fileID: 3598076679106794921}
   m_Layer: 3
   m_Name: Up 5
   m_TagString: Ground
@@ -756,6 +742,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3598076679106794921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
 --- !u!1 &8551957346362249523
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +848,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4778999532384458819}
-  - component: {fileID: 5262353593389085247}
   - component: {fileID: 6207268125710857864}
   m_Layer: 0
   m_Name: GameObject (1)
@@ -877,20 +875,6 @@ Transform:
   - {fileID: 4269229647788457993}
   m_Father: {fileID: 333900276114211296}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5262353593389085247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8592631600327801554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edd05332a64c2a442b67e8c95757080d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster: {fileID: 5505956477227735175, guid: a2d8c5eaf89f79e4384924d8b233d401, type: 3}
-  spawnHeightOffset: 1
 --- !u!68 &6207268125710857864
 EdgeCollider2D:
   m_ObjectHideFlags: 0
