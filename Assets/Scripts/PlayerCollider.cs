@@ -8,11 +8,13 @@ public class PlayerCollider : MonoBehaviour
     {
         if (other.gameObject.layer == groundLayer)
         {
+            Debug.Log("spawn");
             MobSpawn mobSpawn = other.GetComponent<MobSpawn>();
             
             // Kiểm tra xem mobSpawn có bị null không
             if (mobSpawn != null)
             {
+                
                 mobSpawn.spawngameobject();
             }
             else
