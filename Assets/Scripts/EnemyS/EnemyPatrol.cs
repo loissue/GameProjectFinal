@@ -10,19 +10,23 @@ namespace EnemyS
 
         [Header("Movement parameters")]
         [SerializeField] private float speed;
+        [SerializeField] private float moveDuration = 3f;
         private Vector3 initScale;
         private bool movingLeft;
+        private float moveTimer;
+        private bool isIdle;
 
         [Header("Idle Behaviour")]
         private float idleDuration;
         private float idleTimer;
-
+        
         private Animator anim;
 
         private void Awake()
         {
             initScale = gameObject.transform.localScale;
             anim = gameObject.GetComponent<Animator>();
+            SetNewMoveTimer();
         }
 
         private void OnDisable()
@@ -32,14 +36,63 @@ namespace EnemyS
 
         private void Update()
         {
-            if (IsGroundInFront())
+            if (isIdle)
             {
-                MoveInDirection(movingLeft ? -1 : 1);
+                idleTimer -= Time.deltaTime;
+                if (idleTimer <= 0)
+                {
+                    anim.SetBool("moving", true);
+                    SetNewMoveTimer();
+                    isIdle = false;
+                }
             }
             else
             {
-                DirectionChange();
+                moveTimer -= Time.deltaTime;
+                if (moveTimer <= 0)
+                {
+                    anim.SetBool("moving", false);
+                    ChooseIdleOrReverse();
+                }
+                else
+                {
+                    if (IsGroundInFront())
+                    {
+                        MoveInDirection(movingLeft ? -1 : 1);
+                    }
+                    else
+                    {
+                        DirectionChange();
+                    }
+                }
             }
+        }
+        
+        private void SetNewMoveTimer()
+        {
+            moveTimer = moveDuration;
+        }
+
+        private void ChooseIdleOrReverse()
+        {
+            if (Random.value > 0.5f)
+            {
+                idleTimer = idleDuration;
+                isIdle = true;
+            }
+            else
+            {
+                ReverseDirection();
+                SetNewMoveTimer();
+            }
+        }
+        
+        private void ReverseDirection()
+        {
+            movingLeft = !movingLeft;
+
+            // Reverse direction and flip sprite
+            transform.localScale = new Vector3(Mathf.Abs(initScale.x) * (movingLeft ? -1 : 1), initScale.y, initScale.z);
         }
 
         private bool IsGroundInFront()
