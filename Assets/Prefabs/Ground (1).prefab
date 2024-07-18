@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4749056724019080536}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -32.42, y: -9.51, z: 1.446105}
   m_LocalScale: {x: 4.88276, y: 0.9418336, z: 1}
   m_ConstrainProportionsScale: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
   spawnableObjects:
   - objectToSpawn: {fileID: 2371813429967955879, guid: 2f0877b922ee1c444be6636c068e3f60, type: 3}
     spawnChance: 13.1
-  - objectToSpawn: {fileID: 1317349364160343035, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 958d9a6e13eb1734f9a4237c841a5c57, type: 3}
     spawnChance: 13.6
   - objectToSpawn: {fileID: 7924401330420533119, guid: fc22066c8750da44eb6cad50b5b51e42, type: 3}
     spawnChance: 13.6
