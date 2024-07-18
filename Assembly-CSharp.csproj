@@ -67,11 +67,13 @@
     <Compile Include="Assets\BuffController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Terrain\Replace.cs" />
+    <Compile Include="Assets\Scripts\ÚIcript\ScoringManagement.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
     <Compile Include="Assets\Scripts\EnemyS\DropItem.cs" />
     <Compile Include="Assets\Scripts\Terrain\ChoseBiome.cs" />
     <Compile Include="Assets\Scripts\EnemyS\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\Coin\CoinScript.cs" />
     <Compile Include="Assets\Scripts\EnemyS\EnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />

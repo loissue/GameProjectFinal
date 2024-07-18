@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8713857222845568397}
   - component: {fileID: 7542890450189837846}
   - component: {fileID: 1264440680531185496}
+  - component: {fileID: -230250715736365660}
   m_Layer: 8
   m_Name: Skeleton
   m_TagString: Enemy
@@ -217,6 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afcbd9e6932fe940800d7f26f354bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 2
+  minTimeToChangeDirection: 3
+  maxTimeToChangeDirection: 15
   attackCooldown: 3
   range: 2.4
   damage: 30
@@ -261,3 +265,18 @@ MonoBehaviour:
     m_Bits: 8
   groundCheckDistance: 0.98
   speed: 3
+--- !u!114 &-230250715736365660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371813429967955879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c92bcd73cf4c32ab5752de3f7acd9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnableObjects:
+  - objectToSpawn: {fileID: 1117964034447866081, guid: 0bfb593d0d3d8bd4c9ba57d8d86349e4, type: 3}
+    spawnChance: 100
