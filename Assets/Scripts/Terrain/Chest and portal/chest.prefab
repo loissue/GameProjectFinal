@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4749056724019080536
+--- !u!1 &325160379823626879
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8966734679898667424}
-  - component: {fileID: 9164791146125029101}
-  - component: {fileID: 2310625475174110833}
-  - component: {fileID: 8975021099032955947}
-  - component: {fileID: 5464807746788843552}
-  m_Layer: 3
-  m_Name: Ground (1)
-  m_TagString: Ground
+  - component: {fileID: 4772996801442313492}
+  - component: {fileID: 7856659991114949022}
+  - component: {fileID: -5491717572903516342}
+  - component: {fileID: 2130081434184826656}
+  m_Layer: 0
+  m_Name: chest
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8966734679898667424
+--- !u!4 &4772996801442313492
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749056724019080536}
+  m_GameObject: {fileID: 325160379823626879}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.42, y: -9.51, z: 1.446105}
-  m_LocalScale: {x: 4.88276, y: 0.9418336, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.228, y: -5.233, z: 0.602}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &9164791146125029101
+--- !u!212 &7856659991114949022
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749056724019080536}
+  m_GameObject: {fileID: 325160379823626879}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,36 +75,52 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.39248845, g: 0.5660378, b: 0.41235957, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8164f66a9c3ec9b44959f81b962e3a09, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2470982, y: 1.0274559}
+  m_Size: {x: 2.25, y: 2.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2310625475174110833
+--- !u!114 &-5491717572903516342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749056724019080536}
+  m_GameObject: {fileID: 325160379823626879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec47fc9df8880b1478cea1b55fbae30b, type: 3}
+  m_Script: {fileID: 11500000, guid: 21b1dca220054034b955bc9c669858c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &8975021099032955947
+  spawnHeightOffset: 1
+  prefabsWithPercentages:
+  - prefab: {fileID: 7924401330420533119, guid: fc22066c8750da44eb6cad50b5b51e42, type: 3}
+    percentage: 20
+  - prefab: {fileID: 2778001696739815371, guid: 9ce55abc842ac964ebd43a5938078b74, type: 3}
+    percentage: 20
+  - prefab: {fileID: 2282470427748540409, guid: 7f913a7c14d3eb948987be65d5d197d6, type: 3}
+    percentage: 20
+  - prefab: {fileID: 762516013029696115, guid: 62042724368e1de489ed03e0aaa0537b, type: 3}
+    percentage: 20
+  - prefab: {fileID: 4768519291701731100, guid: 6354fab1af9889246b1621558c2a1da3, type: 3}
+    percentage: 20
+  - prefab: {fileID: 1234866186331668760, guid: f50eb26ed23bc504590c4dd4265f1f7b, type: 3}
+    percentage: 20
+  - prefab: {fileID: 8405836956856548580, guid: 0d74cc2d77af6a94087a03cacbb3d71f, type: 3}
+    percentage: 20
+--- !u!61 &2130081434184826656
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749056724019080536}
+  m_GameObject: {fileID: 325160379823626879}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -128,50 +143,19 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1.2470982, y: 1.0274559}
+    oldSize: {x: 2.25, y: 2.25}
+    newSize: {x: 2.25, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.25, y: 2.25}
   m_EdgeRadius: 0
---- !u!114 &5464807746788843552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749056724019080536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  removegroundchance: 20
-  spawnHeightOffset: 1
-  spawnableObjects:
-  - objectToSpawn: {fileID: 2371813429967955879, guid: 2f0877b922ee1c444be6636c068e3f60, type: 3}
-    spawnChance: 13.1
-  - objectToSpawn: {fileID: 1317349364160343035, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 7924401330420533119, guid: fc22066c8750da44eb6cad50b5b51e42, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 2778001696739815371, guid: 9ce55abc842ac964ebd43a5938078b74, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 2282470427748540409, guid: 7f913a7c14d3eb948987be65d5d197d6, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 762516013029696115, guid: 62042724368e1de489ed03e0aaa0537b, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 4768519291701731100, guid: 6354fab1af9889246b1621558c2a1da3, type: 3}
-    spawnChance: 13.6
-  - objectToSpawn: {fileID: 325160379823626879, guid: 2654830e473586547970678158b638fc, type: 3}
-    spawnChance: 14.9
