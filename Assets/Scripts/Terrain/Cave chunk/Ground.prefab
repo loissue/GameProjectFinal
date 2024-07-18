@@ -151,12 +151,12 @@ MonoBehaviour:
     spawnChance: 10
   - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
     spawnChance: 10
-  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
-    spawnChance: 10
   - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
     spawnChance: 10
   - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
     spawnChance: 10
+  - objectToSpawn: {fileID: 6774909512471863999, guid: 217a1b5e82ab5af4ca886327696f062d, type: 3}
+    spawnChance: 2
 --- !u!114 &7393495076445813081
 MonoBehaviour:
   m_ObjectHideFlags: 0

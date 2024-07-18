@@ -40,7 +40,7 @@ public class Magazin : MonoBehaviour
     {
         
         shoot.getbulletlist(Bullets);
-        GunInven.GetFirstGun(Bullets, this.gameObject);
+        // GunInven.GetFirstGun(Bullets, this.gameObject);
     }
     //public void giveoutMagazin() 
     //{

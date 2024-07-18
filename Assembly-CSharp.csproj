@@ -105,6 +105,7 @@
     <Compile Include="Assets\Scripts\BuffItemController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Terrain\ReplaceEntity.cs" />
+    <Compile Include="Assets\Scripts\MobSpawn1.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Enemy\SnowManBehavior.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
