@@ -228,7 +228,7 @@ MonoBehaviour:
   polygonCollider: {fileID: 7580861943500228841}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!114 &7542890450189837846
 MonoBehaviour:
   m_ObjectHideFlags: 0

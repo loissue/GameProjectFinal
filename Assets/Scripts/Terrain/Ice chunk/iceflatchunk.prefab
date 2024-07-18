@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4200167727819672455}
   - component: {fileID: 8786133538048517503}
+  - component: {fileID: 1591606007746616695}
   m_Layer: 0
   m_Name: iceflatchunk
   m_TagString: Untagged
@@ -84,3 +85,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1591606007746616695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860245355626986471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects:
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10

@@ -38,7 +38,7 @@ public class ChoseBiome : MonoBehaviour
     public void InitializeChosenList()
     {
             chosenList = ChooseList();
-            DebugChosenList();
+            
     }
 
     PrefabWithPercentage[] ChooseList()
@@ -64,19 +64,5 @@ public class ChoseBiome : MonoBehaviour
         return list;
     }
 
-    void DebugChosenList()
-    {
-        if (chosenList != null && chosenList.Length > 0)
-        {
-            Debug.Log("Chosen list initialized with " + chosenList.Length + " items.");
-            foreach (var item in chosenList)
-            {
-                Debug.Log("Prefab: " + item.prefab.name + ", Percentage: " + item.percentage);
-            }
-        }
-        else
-        {
-            Debug.LogError("Chosen list is null or empty.");
-        }
-    }
+    
 }

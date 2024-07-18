@@ -98,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4718032422350442302}
   - component: {fileID: 4087187481527523279}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (59)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842440899239537836}
   - component: {fileID: 1686577758691844298}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (56)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5568176509348431809}
   - component: {fileID: 5630345276942901346}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (54)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614462746423801306}
   - component: {fileID: 4741336479310487648}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (57)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4269229647788457993}
   - component: {fileID: 3394887655502848898}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (61)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6844686929780157692}
   - component: {fileID: 5942095315284141824}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (58)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -689,7 +689,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   removegroundchance: 5
   spawnHeightOffset: 1
-  spawnableObjects: []
+  spawnableObjects:
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10
 --- !u!212 &7475480755635934072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -765,7 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1863089168021619213}
   - component: {fileID: 3412771937819126383}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (60)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -937,7 +947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7955023689220815966}
   - component: {fileID: 528029370172463881}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (55)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1074,10 +1084,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6860245355626986471, guid: 3bf45fc2265d3f045a87d583737dd023, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2961753076730088415}
   m_SourcePrefab: {fileID: 100100000, guid: 3bf45fc2265d3f045a87d583737dd023, type: 3}
 --- !u!4 &3098716553174225496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4200167727819672455, guid: 3bf45fc2265d3f045a87d583737dd023, type: 3}
   m_PrefabInstance: {fileID: 1245566363327715807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5655774356626317880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6860245355626986471, guid: 3bf45fc2265d3f045a87d583737dd023, type: 3}
+  m_PrefabInstance: {fileID: 1245566363327715807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2961753076730088415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655774356626317880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []

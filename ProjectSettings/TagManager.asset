@@ -15,11 +15,12 @@ TagManager:
   - BuffManager
   - Tentacle
   - Chest
+  - buffbullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 

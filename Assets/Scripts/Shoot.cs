@@ -71,7 +71,7 @@ public class Shoot : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Shooting with buffs: " + string.Join(", ", buffs));
+                    
                     Shooting(Bullets[a], buffs);
                     a++;
                     if (a == Bullets.Length)

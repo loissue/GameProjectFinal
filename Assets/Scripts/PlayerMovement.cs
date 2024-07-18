@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("RightWalk", false);
             }
         isGrounded = Physics2D.OverlapCircle(transform.position, 2f, LayerMask.GetMask("Ground"));
+        
         float moveInput = Input.GetAxisRaw("Horizontal");
         float moveVelo = moveInput*movespeed;
         rb.velocity = new Vector2(moveVelo, rb.velocity.y);
