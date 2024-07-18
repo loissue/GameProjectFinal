@@ -14,6 +14,7 @@ public class BulletControl : MonoBehaviour
 
     private GameObject currentItemObject; // Đối tượng item hiện tại mà player đang đứng gần
     private string tags;
+
     void Start()
     {
         pickupText.SetActive(false); // Ban đầu ẩn thông báo
@@ -29,27 +30,29 @@ public class BulletControl : MonoBehaviour
             InventoryScript.UpdateInventoryUI();
             pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
             currentItemObject.SetActive(false);
-
         }
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
+        else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
         {
-            
+            playerInteract.UnequipCurrentWeapon(); // Gọi hàm để xóa vũ khí hiện tại
+            playerInteract.EquipWeapon(currentItemObject); // Equip vũ khí mới
             isNearItem = false; // Đặt lại biến kiểm tra
-
-            playerInteract.EquipWeapon(currentItemObject);
-            
-            
-
+            pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
         }
-
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Chest")
+        else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Chest")
         {
-
             isNearItem = false; // Đặt lại biến kiểm tra
             chestopen.RandomDrop();
             chestopen = null;
         }
+        else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "buffbullet")
+        {
+            InventoryScript.AddItemToInventory(currentItem); // Thêm item vào inventory
+            isNearItem = false; // Đặt lại biến kiểm tra
 
+            InventoryScript.UpdateInventoryUI();
+            pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
+            currentItemObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -65,22 +68,31 @@ public class BulletControl : MonoBehaviour
                 pickupText.SetActive(true); // Hiện thông báo khi player ở gần item
             }
         }
-        if (other.CompareTag("Weapon"))
+        else if (other.CompareTag("Weapon"))
         {
-                isNearItem = true;
-                tags = "Weapon";
-                currentItemObject = other.gameObject;
+            isNearItem = true;
+            tags = "Weapon";
+            currentItemObject = other.gameObject;
             pickupText.SetActive(true);
-
         }
-        RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
-        if (other.CompareTag("Chest"))
+        else if (other.CompareTag("Chest"))
         {
             isNearItem = true;
             tags = "Chest";
             currentItemObject = other.gameObject;
             pickupText.SetActive(true);
-            chestopen = upgrade;
+            chestopen = other.GetComponent<RandomUpgrade>();
+        }
+        else if (other.CompareTag("buffbullet")) {
+            InventoryScript.BulletList item = other.gameObject.GetComponent<Item>().bulletList; // Giả sử item có component chứa thông tin về BulletList
+            if (item != null)
+            {
+                tags = "Bullet";
+                currentItem = item;
+                currentItemObject = other.gameObject;
+                isNearItem = true;
+                pickupText.SetActive(true); // Hiện thông báo khi player ở gần item
+            }
         }
     }
 
@@ -97,15 +109,27 @@ public class BulletControl : MonoBehaviour
                 pickupText.SetActive(false); // Ẩn thông báo khi player rời xa item
             }
         }
-        RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
-        if (other.CompareTag("Chest"))
+        else if (other.CompareTag("Weapon"))
         {
-                isNearItem = false;
-                pickupText.SetActive(false);
-            chestopen = null;    
+            isNearItem = false;
+            pickupText.SetActive(false);
         }
-
+        else if (other.CompareTag("Chest"))
+        {
+            isNearItem = false;
+            pickupText.SetActive(false);
+            chestopen = null;
+        }
+        else if (other.CompareTag("buffbullet"))
+        {
+            InventoryScript.BulletList item = other.gameObject.GetComponent<Item>().bulletList;
+            if (item != null)
+            {
+                currentItem = null;
+                currentItemObject = null;
+                isNearItem = false;
+                pickupText.SetActive(false); // Ẩn thông báo khi player rời xa item
+            }
+        }
     }
-
-    
 }

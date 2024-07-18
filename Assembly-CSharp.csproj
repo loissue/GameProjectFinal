@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Terrain\Replace.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\ScoringManagement.cs" />
     <Compile Include="Assets\Scripts\ÚIcript\TimeRemainCount.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer1.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
     <Compile Include="Assets\Scripts\EnemyS\DropItem.cs" />
     <Compile Include="Assets\Scripts\Terrain\ChoseBiome.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\Scripts\weapon script\TripleShotBullet.cs" />
     <Compile Include="Assets\Scripts\BufManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\weapon script\RifleScript.cs" />
     <Compile Include="Assets\Scripts\Terrain\Bomb.cs" />
     <Compile Include="Assets\Scripts\BuffItemController.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
