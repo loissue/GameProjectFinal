@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7999943441338254525}
   m_Layer: 0
   m_Name: cursebulllet
-  m_TagString: Untagged
+  m_TagString: buffbullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9015611155748483062}
   - component: {fileID: 7348373481007668543}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (42)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 700567477575178664}
   - component: {fileID: 7118143646284367050}
   - component: {fileID: 5387328227711969485}
+  - component: {fileID: 982252682486830801}
   m_Layer: 0
   m_Name: 90323df34f32e113f449b4de22065f3cafa2f6f8 - Copy - Copy (2) - Copy
   m_TagString: Untagged
@@ -214,6 +215,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.94, y: 1.56}
   m_EdgeRadius: 0
+--- !u!114 &982252682486830801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043124638167420933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &6810351719206849719
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +241,7 @@ GameObject:
   - component: {fileID: 3427480001701565069}
   - component: {fileID: 3404527858897903464}
   - component: {fileID: 8126622573153691583}
+  - component: {fileID: 6366673819471397131}
   m_Layer: 0
   m_Name: 90323df34f32e113f449b4de22065f3cafa2f6f8 - Copy - Copy (2)
   m_TagString: Untagged
@@ -344,6 +361,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.94, y: 1.56}
   m_EdgeRadius: 0
+--- !u!114 &6366673819471397131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810351719206849719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &6855265591646521143
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2687771183856562070}
   - component: {fileID: 8285335133573441599}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (43)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -532,7 +564,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   removegroundchance: 5
   spawnHeightOffset: 1
-  spawnableObjects: []
+  spawnableObjects:
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10
 --- !u!114 &3149886889797639568
 MonoBehaviour:
   m_ObjectHideFlags: 0

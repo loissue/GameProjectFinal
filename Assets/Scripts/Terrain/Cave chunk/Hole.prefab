@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 210589604950655103}
   - component: {fileID: 6927051465663887785}
-  m_Layer: 3
+  - component: {fileID: 4651039670642707367}
+  m_Layer: 0
   m_Name: Hole (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -84,6 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4651039670642707367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988924110947707239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &5252031604970675097
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +111,7 @@ GameObject:
   - component: {fileID: 1336677217970066836}
   - component: {fileID: 6592265310993370298}
   - component: {fileID: 774044794540727125}
+  - component: {fileID: 9115234663853943557}
   m_Layer: 3
   m_Name: Hole
   m_TagString: Ground
@@ -214,6 +231,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &9115234663853943557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5252031604970675097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &5358701687549964841
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +257,7 @@ GameObject:
   - component: {fileID: 3678130708038988360}
   - component: {fileID: 1697902646387598167}
   - component: {fileID: 7782593917761499349}
+  - component: {fileID: 8746681349608350247}
   m_Layer: 3
   m_Name: Hole (1)
   m_TagString: Ground
@@ -344,6 +377,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8746681349608350247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358701687549964841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &6265225394540742048
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +402,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6490688360143641423}
   - component: {fileID: 7261405842016066969}
-  m_Layer: 3
+  - component: {fileID: 6463120419359157383}
+  m_Layer: 0
   m_Name: Hole (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -428,6 +477,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6463120419359157383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6265225394540742048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &7555581044122428436
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 333900276114211296}
   - component: {fileID: 502497981367154185}
+  - component: {fileID: 6649574109475242406}
   m_Layer: 3
   m_Name: Hole
   m_TagString: Ground
@@ -477,3 +542,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+--- !u!114 &6649574109475242406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects:
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5774505069877747699}
   - component: {fileID: 4411850538303607149}
   - component: {fileID: 4654369708249728432}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (38)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 1093725131753859779}
   - component: {fileID: 5947275091530442024}
   - component: {fileID: 7959498375257760678}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (39)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 5470839741282851352}
   - component: {fileID: 1953979682709850789}
   - component: {fileID: 2241523693686109645}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (36)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3680046347297590872}
   - component: {fileID: 3670762920036820054}
   - component: {fileID: 9042478188691833017}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (37)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -531,7 +531,7 @@ GameObject:
   - component: {fileID: 3214069287892535418}
   - component: {fileID: 6780727555241851037}
   - component: {fileID: 6471729007176065126}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (35)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 215655198652640949}
   - component: {fileID: 5143691969462992102}
   - component: {fileID: 8257756349651236038}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (33)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -791,8 +791,8 @@ GameObject:
   - component: {fileID: 333900276114211296}
   - component: {fileID: 743835228832141417}
   - component: {fileID: 1136795926166690694}
-  - component: {fileID: 4437375216222068704}
   - component: {fileID: -8725806537301371236}
+  - component: {fileID: 8259904205734884172}
   m_Layer: 3
   m_Name: Down 1
   m_TagString: Ground
@@ -919,7 +919,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4437375216222068704
+--- !u!114 &-8725806537301371236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7555581044122428436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+--- !u!114 &8259904205734884172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -934,23 +947,16 @@ MonoBehaviour:
   removegroundchance: 5
   spawnHeightOffset: 1
   spawnableObjects:
-  - objectToSpawn: {fileID: 9140195117478459886, guid: 25f825af6b67ef846a4ecc3d9e684a42, type: 3}
-    spawnChance: 3.6
-  - objectToSpawn: {fileID: 5047076128567403307, guid: dfca3ae0cad5a2f489714fa32528f9f4, type: 3}
-    spawnChance: 2.4
---- !u!114 &-8725806537301371236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7555581044122428436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9b23669819c054c9fe051028cae05d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 4749056724019080536, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10
 --- !u!1 &8029730810948576796
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +968,7 @@ GameObject:
   - component: {fileID: 44680667242151233}
   - component: {fileID: 1629233052555808669}
   - component: {fileID: 4352555765338759440}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (34)
   m_TagString: Ground
   m_Icon: {fileID: 0}

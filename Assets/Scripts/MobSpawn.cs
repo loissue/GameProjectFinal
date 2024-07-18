@@ -18,6 +18,9 @@ public class MobSpawn : MonoBehaviour
 
     void Start()
     {
+        
+    }
+    public void spawngameobject(){
         foreach (SpawnableObject spawnable in spawnableObjects)
         {
             float randomValueEnemy = Random.Range(0f, 100f);
@@ -28,4 +31,5 @@ public class MobSpawn : MonoBehaviour
             }
         }
     }
+    
 }

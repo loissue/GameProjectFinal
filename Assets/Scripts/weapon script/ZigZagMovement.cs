@@ -10,6 +10,7 @@ public class ZigZagMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 initialDirection;
+    private bool isActive = false;
 
     void Start()
     {
@@ -19,9 +20,21 @@ public class ZigZagMovement : MonoBehaviour
             rb = gameObject.AddComponent<Rigidbody2D>();
         }
         initialDirection = transform.right;
-        // Add initial force to bullet
-        rb.velocity = initialDirection * BulletSpeed;
-        StartCoroutine(ZigZag());
+    }
+
+    void Update()
+    {
+        if (isActive)
+        {
+            StartCoroutine(ZigZag());
+            isActive = false; // Ensure the coroutine is started only once
+        }
+    }
+
+    public void ActivateZigZag(float speed)
+    {
+        BulletSpeed = speed;
+        isActive = true;
     }
 
     private IEnumerator ZigZag()

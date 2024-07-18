@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6194428533536574061}
   - component: {fileID: 7208481536657637006}
   - component: {fileID: 533720660491724763}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (42)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 7384895031666420462}
   - component: {fileID: 7675885965449025781}
   - component: {fileID: 3383720492894871441}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (41)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1727979308520630052}
   - component: {fileID: 1229664631151595260}
   - component: {fileID: 4822842416973097071}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (36)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 591011910600642259}
   - component: {fileID: 523020524681307706}
   - component: {fileID: 8478226991949206373}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (40)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 7906225823755881}
   - component: {fileID: 297966547116346426}
   - component: {fileID: 1381223721414694298}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (38)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -736,6 +736,7 @@ GameObject:
   - component: {fileID: 3029579029002059010}
   - component: {fileID: 9063569806760831971}
   - component: {fileID: 3766872868047820634}
+  - component: {fileID: 591454022699442602}
   m_Layer: 0
   m_Name: iceflatchunk1
   m_TagString: Untagged
@@ -855,6 +856,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &591454022699442602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583415800512998015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &6737817492872034363
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +882,7 @@ GameObject:
   - component: {fileID: 6105175077721344828}
   - component: {fileID: 2791157986102793898}
   - component: {fileID: 2158535736402440467}
+  - component: {fileID: 4283791278771218918}
   m_Layer: 0
   m_Name: iceflatchunk2
   m_TagString: Untagged
@@ -985,6 +1002,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4283791278771218918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6737817492872034363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  removegroundchance: 5
+  spawnHeightOffset: 1
+  spawnableObjects: []
 --- !u!1 &7101323905506474863
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1029,7 @@ GameObject:
   - component: {fileID: 570478922352510111}
   - component: {fileID: 2442523413839981620}
   - component: {fileID: 6617690159598417660}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (39)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1142,7 +1174,7 @@ GameObject:
   - component: {fileID: 3171621536235131945}
   - component: {fileID: 8217973840044271321}
   - component: {fileID: 2179109808321477506}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (37)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1412,7 +1444,7 @@ GameObject:
   - component: {fileID: 1303739328595943855}
   - component: {fileID: 2981729903685953317}
   - component: {fileID: 4076029093611237848}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ground (43)
   m_TagString: Ground
   m_Icon: {fileID: 0}

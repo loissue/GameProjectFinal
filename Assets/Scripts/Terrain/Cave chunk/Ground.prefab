@@ -147,10 +147,16 @@ MonoBehaviour:
   removegroundchance: 5
   spawnHeightOffset: 1
   spawnableObjects:
-  - objectToSpawn: {fileID: 9140195117478459886, guid: 25f825af6b67ef846a4ecc3d9e684a42, type: 3}
-    spawnChance: 3.6
-  - objectToSpawn: {fileID: 5047076128567403307, guid: dfca3ae0cad5a2f489714fa32528f9f4, type: 3}
-    spawnChance: 2.4
+  - objectToSpawn: {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
+    spawnChance: 10
+  - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
+    spawnChance: 10
 --- !u!114 &7393495076445813081
 MonoBehaviour:
   m_ObjectHideFlags: 0
