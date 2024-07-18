@@ -20,8 +20,11 @@ public class Bullet : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(50);
+        }
+        if(collision.gameObject.tag == "Tentacle")
+        {
+            collision.gameObject.GetComponentInParent<Health>().TakeDamage(50);
             Debug.Log("cham");
         }
     }
-    
 } 

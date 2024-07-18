@@ -22025,6 +22025,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying_eye
       objectReference: {fileID: 0}
+    - target: {fileID: 4485447007571268158, guid: 958d9a6e13eb1734f9a4237c841a5c57, type: 3}
+      propertyPath: idleDuration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485447007571268158, guid: 958d9a6e13eb1734f9a4237c841a5c57, type: 3}
+      propertyPath: moveDuration
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8255175108295620561, guid: 958d9a6e13eb1734f9a4237c841a5c57, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.587899

@@ -15,6 +15,7 @@ TagManager:
   - BuffManager
   - Tentacle
   - Chest
+  - Boss
   layers:
   - Default
   - TransparentFX
