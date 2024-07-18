@@ -64,7 +64,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.27f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Boss\Boss.cs" />
     <Compile Include="Assets\Scripts\EnemyS\HealthBarScript.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\GunInven.cs" />
     <Compile Include="Assets\Scripts\Terrain\SpawnMonster.cs" />
@@ -115,6 +114,7 @@
     <Compile Include="Assets\Scripts\InventoryScript\Item.cs" />
     <Compile Include="Assets\Scripts\EnemyS\RangedEnemy.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Boss\BossScript.cs" />
     <Compile Include="Assets\Scripts\Magazin.cs" />
     <Compile Include="Assets\Scripts\EnemyS\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\InventoryScript.cs" />

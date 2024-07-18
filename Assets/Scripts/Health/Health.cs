@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Boss;
 using EnemyS;
 using UnityEngine;
 
@@ -43,9 +44,11 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-                
-                gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-
+                var rgBody = gameObject.GetComponent<Rigidbody2D>();
+                if (rgBody != null)
+                {
+                    rgBody.bodyType = RigidbodyType2D.Dynamic;
+                }
                 //Deactivate all attached component classes
                 foreach (Behaviour component in components)
                     component.enabled = false;
