@@ -15,27 +15,30 @@ namespace EnemyS
         [SerializeField] private float burnDamagePerSecond = 10f;
 
         private bool hit;
+        private Vector3 playerPositionToHit;
+        private Rigidbody2D rb;
 
         private void Awake()
         {
             anim = GetComponent<Animator>();
             coll = GetComponent<BoxCollider2D>();
+            rb = GetComponent<Rigidbody2D>();
         }
 
-        public void ActivateProjectile()
+        public void ActivateProjectile(Vector3 playerPosition)
         {
             hit = false;
             lifetime = 0;
             gameObject.SetActive(true);
             coll.enabled = true;
+            // Calculate the direction to the player and set the velocity
+            Vector2 direction = (playerPosition - transform.position).normalized;
+            rb.velocity = direction * speed;
         }
 
         private void Update()
         {
             if (hit) return;
-            float movementSpeed = speed * Time.deltaTime;
-            transform.Translate(movementSpeed, 0, 0);
-
             lifetime += Time.deltaTime;
             if (lifetime > resetTime)
                 gameObject.SetActive(false);
@@ -53,7 +56,6 @@ namespace EnemyS
                 {
                     collision.GetComponent<Health>().ApplyBurnEffect(burnDuration, burnDamagePerSecond);
                 }
-
                 if (anim != null)
                     anim.SetTrigger("explode"); //When the object is a fireball explode it
                 else

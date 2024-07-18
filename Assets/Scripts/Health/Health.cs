@@ -43,6 +43,8 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
+                
+                gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 
                 //Deactivate all attached component classes
                 foreach (Behaviour component in components)
