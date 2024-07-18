@@ -285,6 +285,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5464807746788843552, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+      propertyPath: spawnableObjects.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464807746788843552, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+      propertyPath: spawnableObjects.Array.data[7].spawnChance
+      value: 22.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464807746788843552, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
+      propertyPath: spawnableObjects.Array.data[7].objectToSpawn
+      value: 
+      objectReference: {fileID: 325160379823626879, guid: 2654830e473586547970678158b638fc, type: 3}
     - target: {fileID: 8966734679898667424, guid: 18b4c8a7e12ca5447a1fcb83fdce0b46, type: 3}
       propertyPath: m_LocalScale.x
       value: 4.88276
