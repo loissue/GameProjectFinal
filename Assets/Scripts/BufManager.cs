@@ -67,7 +67,7 @@ public class BufManager : MonoBehaviour
             StartCoroutine(ApplyBuff(timeGravity, gravityImage, () =>
             {
                 playerMove.isRevert = false;
-                player.GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(player.GetComponent<Rigidbody2D>().gravityScale)/2; 
+                player.GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(player.GetComponent<Rigidbody2D>().gravityScale); 
             }));
         }
     }
