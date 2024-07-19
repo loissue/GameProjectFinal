@@ -109,7 +109,11 @@
     <Compile Include="Assets\Scripts\PlayerCollider.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\weaponpickup.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\weapon script\TripleShotBullet.cs" />
+=======
+    <Compile Include="Assets\Scripts\Menu.cs" />
+>>>>>>> f09bc5b (Menu)
     <Compile Include="Assets\Scripts\BufManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\weapon script\RifleScript.cs" />
