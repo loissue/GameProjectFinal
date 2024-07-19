@@ -46,13 +46,14 @@ namespace EnemyS
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Ground")
+            if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Ground"))
             {
                 hit = true;
                 base.OnTriggerEnter2D(collision); //Execute logic from parent script first
+                rb.velocity = Vector2.zero;
                 coll.enabled = false;
                 
-                if (collision.gameObject.tag == "Player")
+                if (collision.gameObject.CompareTag("Player"))
                 {
                     collision.GetComponent<Health>().ApplyBurnEffect(burnDuration, burnDamagePerSecond);
                 }

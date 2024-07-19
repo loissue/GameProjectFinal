@@ -5,35 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d11b15e8-f50b-4cf3-9ca2-71f4067fd5db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Boss/death.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Boss/death.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explosion.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explosion.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/Explosion.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/explode.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Effects/explode.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Effects/explosion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Effects/explosion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/BossProjectile.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/BossProjectile.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/boss_ball_explode.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/boss_ball_explode.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/boss_ball_idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/boss_ball_idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/fireball_Idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/fireball_Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/fireball_explode.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/fireball_explode.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProjectFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProjectFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.changes" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.changes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.plastic/plastic.wktree" beforeDir="false" afterPath="$PROJECT_DIR$/.plastic/plastic.wktree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Boss/Boss.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Boss/Boss.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Boss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Boss.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fireball/Fireball.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/Fireball.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Fireball/Fireball_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy/Fireball/Fireball_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BossProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BossProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/Idle_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BulletPrefab/Idle_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Flying_eye.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Flying_eye.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Skeleton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab/Skeleton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fireball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fireball.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BossFight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BossFight.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/Boss.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/BossScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/Boss.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/BossScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyPatrol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyS/FlyingEnemyPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyS/FlyingEnemyPatrol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/weapon script/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/weapon script/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/BossProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/BossProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyS/MeleeEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyS/MeleeEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyS/RangedEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyS/RangedEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +42,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55fbbbd17b724c15b6abe8c1a3e3289c175c00/34/6ddf6cf9/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55fbbbd17b724c15b6abe8c1a3e3289c175c00/58/19b193c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/55fbbbd17b724c15b6abe8c1a3e3289c175c00/f5/7a2ba06d/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Boss/BossScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyS/MeleeEnemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Editor/SolutionParser.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.visualstudio@2.0.22/Editor/VisualStudioForWindowsInstallation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mathematics@1.2.6/Unity.Mathematics/half4.gen.cs" root0="SKIP_HIGHLIGHTING" />
@@ -69,7 +69,7 @@
     "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "XThreadsFramesViewSplitterKey": "0.37188208",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "fix/boss",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -111,10 +111,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21956">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="916">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21956" />
+      <option name="pid" value="916" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -149,5 +149,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/EnemyS/EnemyProjectile.cs</url>
+          <line>48</line>
+          <properties documentPath="E:\Download\SLIDES\SUM2024\PRU212\Project\GameProjectFinal\Assets\Scripts\EnemyS\EnemyProjectile.cs" containingFunctionPresentation="Method 'OnTriggerEnter2D'">
+            <startOffsets>
+              <option value="1442" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1533" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
