@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
     public Transform gunHolder; // Gunholder của nhân vật
     private GameObject equippedWeapon; // Vũ khí được trang bị
-    
+    public GunInven guninven;
+
     void Start()
     {
         
@@ -28,6 +27,10 @@ public class PlayerInteract : MonoBehaviour
         weapon.SetActive(true);
         weapon.GetComponent<Shoot>().enabled = true;
 
+        // Chuyển đổi List<GameObject> thành GameObject[]
+        GameObject[] bulletsArray = weapon.GetComponent<Magazin>().Bullets.ToArray();
+        guninven.GetFirstGun(bulletsArray, weapon);
+        
         // Gán vũ khí được trang bị
         equippedWeapon = weapon;
     }
@@ -46,5 +49,10 @@ public class PlayerInteract : MonoBehaviour
             // Đặt lại vũ khí được trang bị
             equippedWeapon = null;
         }
+    }
+
+    public GameObject GetEquippedWeapon()
+    {
+        return equippedWeapon;
     }
 }

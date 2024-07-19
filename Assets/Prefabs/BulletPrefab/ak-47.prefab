@@ -139,7 +139,7 @@ MonoBehaviour:
   BulletSpeed: 10
   Magazin: {fileID: 8992001621340555679}
   ShootPoint: {fileID: 9107233355982892037}
-  guninven: {fileID: 0}
+  guninven: {fileID: 5215860697040878598, guid: 6441f5acf80b4d648806ac3d29752bc9, type: 3}
   Bullets: []
   shootInterval: 1
 --- !u!114 &8992001621340555679
@@ -155,13 +155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoot: {fileID: 4994458116942646777}
-  bullet1: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
-  bullet2: {fileID: 4141960196367161183, guid: 4307e6096557cf7429dd9db9f6d18938, type: 3}
-  GunInven: {fileID: 0}
+  GunInven: {fileID: 5215860697040878598, guid: 6441f5acf80b4d648806ac3d29752bc9, type: 3}
+  bulletSlotPrefab: {fileID: 5399870478755037038, guid: 5213ed9ce83e1a54ba9d9d66bf11598b, type: 3}
+  bulletGrid: {fileID: 7190040879251954263, guid: 5213ed9ce83e1a54ba9d9d66bf11598b, type: 3}
   Bullets:
   - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
-  - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
-  - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+  - {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
   - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
 --- !u!61 &126586410347478383
 BoxCollider2D:
