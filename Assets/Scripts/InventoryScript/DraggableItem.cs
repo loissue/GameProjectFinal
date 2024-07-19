@@ -6,9 +6,8 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
     private Canvas canvas;
-    public Transform OriginalParent { get; set; }
-    public InventoryScript Inventory { get; set; }
-    public Magazin Magazin { get; set; }
+    private Vector2 originalPosition;
+    private Transform originalParent;
 
     void Awake()
     {
@@ -19,41 +18,26 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        OriginalParent = transform.parent;
-        canvasGroup.alpha = 0.6f;
-        canvasGroup.blocksRaycasts = false;
-        transform.SetParent(canvas.transform);
+        originalPosition = rectTransform.anchoredPosition;
+        originalParent = rectTransform.parent;
+        canvasGroup.alpha = 0.6f; // Làm mờ item khi kéo
+        canvasGroup.blocksRaycasts = false; // Cho phép item được kéo qua các UI element khác
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor; // Cập nhật vị trí của item khi kéo
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1f; // Trả lại độ trong suốt
+        canvasGroup.blocksRaycasts = true; // Không cho phép item được kéo qua các UI element khác
 
-        if (eventData.pointerEnter == null || eventData.pointerEnter.GetComponent<DropZone>() == null)
+        if (!RectTransformUtility.RectangleContainsScreenPoint(originalParent.GetComponent<RectTransform>(), Input.mousePosition))
         {
-            transform.SetParent(OriginalParent);
-            rectTransform.anchoredPosition = Vector2.zero;
-        }
-        else
-        {
-            DropZone dropZone = eventData.pointerEnter.GetComponent<DropZone>();
-            if (dropZone != null)
-            {
-                if (dropZone.dropZoneType == DropZone.DropZoneType.Inventory && Inventory != null)
-                {
-                    Inventory.UpdateInventory();
-                }
-                else if (dropZone.dropZoneType == DropZone.DropZoneType.Weapon && Magazin != null)
-                {
-                    Magazin.UpdateBullets();
-                }
-            }
+            rectTransform.SetParent(originalParent);
+            rectTransform.anchoredPosition = originalPosition;
         }
     }
 }

@@ -29,7 +29,7 @@ public class BulletControl : MonoBehaviour
 
             InventoryScript.UpdateInventoryUI();
             pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
-            Destroy(currentItemObject); // Destroy the original item after adding to inventory
+            currentItemObject.SetActive(false);
         }
         else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
         {
@@ -51,7 +51,7 @@ public class BulletControl : MonoBehaviour
 
             InventoryScript.UpdateInventoryUI();
             pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
-            Destroy(currentItemObject); // Destroy the original item after adding to inventory
+            currentItemObject.SetActive(false);
         }
     }
 
