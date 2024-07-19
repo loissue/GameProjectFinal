@@ -68,11 +68,16 @@ void Update()
                 animator.SetTrigger("teleport");
                 StartCoroutine(TeleportWithDelay());
             }
+            
+        }
+        if (isRevert)
+        {
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 rb.gravityScale *= -1;
             }
         }
+      
         if (isEye)
         {
             if (Input.GetKey(KeyCode.E))
@@ -104,7 +109,6 @@ void Update()
             }
 
         }
-
         flip();
     }
     void flip()

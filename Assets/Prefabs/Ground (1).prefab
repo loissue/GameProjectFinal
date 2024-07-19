@@ -158,29 +158,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   removegroundchance: 20
   spawnHeightOffset: 3
-  activationDistance: 1000
   spawnableObjects:
   - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
-    spawnChance: 13.1
-    poolSize: 10
+    spawnChance: 16.1
   - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
-    spawnChance: 13.6
-    poolSize: 10
+    spawnChance: 16.5
   - objectToSpawn: {fileID: 7924401330420533119, guid: fc22066c8750da44eb6cad50b5b51e42, type: 3}
     spawnChance: 13.6
-    poolSize: 10
   - objectToSpawn: {fileID: 2778001696739815371, guid: 9ce55abc842ac964ebd43a5938078b74, type: 3}
     spawnChance: 13.6
-    poolSize: 10
   - objectToSpawn: {fileID: 2282470427748540409, guid: 7f913a7c14d3eb948987be65d5d197d6, type: 3}
     spawnChance: 13.6
-    poolSize: 10
   - objectToSpawn: {fileID: 762516013029696115, guid: 62042724368e1de489ed03e0aaa0537b, type: 3}
     spawnChance: 13.6
-    poolSize: 10
   - objectToSpawn: {fileID: 4768519291701731100, guid: 6354fab1af9889246b1621558c2a1da3, type: 3}
     spawnChance: 13.6
-    poolSize: 10
+  - objectToSpawn: {fileID: 2083373992564803110, guid: e46ee50a343ac65418c1c46e926cb9bb, type: 3}
+    spawnChance: 14.9
   - objectToSpawn: {fileID: 325160379823626879, guid: 2654830e473586547970678158b638fc, type: 3}
     spawnChance: 14.9
-    poolSize: 10
+  - objectToSpawn: {fileID: 8405836956856548580, guid: 0d74cc2d77af6a94087a03cacbb3d71f, type: 3}
+    spawnChance: 14.9
+  - objectToSpawn: {fileID: 1234866186331668760, guid: f50eb26ed23bc504590c4dd4265f1f7b, type: 3}
+    spawnChance: 14.9

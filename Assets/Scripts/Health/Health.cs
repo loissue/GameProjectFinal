@@ -39,9 +39,12 @@ public class Health : MonoBehaviour
     {
         
         if (invulnerable) return;
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        if (!isShield)
+        {
+            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        }
 
-      healthBar.fillAmount = currentHealth/startingHealth;
+        healthBar.fillAmount = currentHealth/startingHealth;
         audioManager.PlaySfx(audioManager.hurtClip);
         if (currentHealth > 0)
         {
