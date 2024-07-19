@@ -8,7 +8,7 @@ public class ScoringManagement : MonoBehaviour
 {
     // public GameOver gameOverScreen;
     public static ScoringManagement instance;
-    private int score = 0;
+    public int score = 0;
     public Text scoreText;  // Assign this through the inspector to display the score
     bool isPaused;
     

@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        currentHealth = startingHealth;
+        currentHealth = startingHealth * (ChoseBiome.Instance.level + 1);
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }

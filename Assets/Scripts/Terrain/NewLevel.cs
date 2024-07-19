@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class NewLevel : MonoBehaviour
 {
-    public KeyCode replaceKey = KeyCode.R;
-
+    public static NewLevel instant;
     void Update()
     {
-        if (Input.GetKeyDown(replaceKey))
-        {
-            if (ChoseBiome.Instance.level < 2)
-            {
-                Debug.LogWarning("ChoseBiome.Instance.level");
-                ChoseBiome.Instance.level++;
-            }
-            else
-            {
-                ChoseBiome.Instance.level = 0;
-            }
-            ChoseBiome.Instance.InitializeChosenList();
-            ReplaceAllEntities();
-        }
     }
-
+    public void nextLevel()
+    {
+        if (ChoseBiome.Instance.level < 2)
+        {
+            Debug.LogWarning("ChoseBiome.Instance.level");
+            ChoseBiome.Instance.level++;
+        }
+        else
+        {
+            ChoseBiome.Instance.level = 0;
+        }
+        ChoseBiome.Instance.InitializeChosenList();
+        ReplaceAllEntities();
+    }
     void ReplaceAllEntities()
     {
         ReplaceNewChunk[] replaceChunks = FindObjectsOfType<ReplaceNewChunk>();

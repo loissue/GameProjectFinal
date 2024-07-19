@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4485447007571268158}
   - component: {fileID: 7297032490440490547}
   - component: {fileID: 2209917509602159412}
+  - component: {fileID: -4507722461362958847}
   m_Layer: 8
   m_Name: Flying_eye
   m_TagString: Enemy
@@ -267,6 +268,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-4507722461362958847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528969233964719446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c92bcd73cf4c32ab5752de3f7acd9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnableObjects:
+  - objectToSpawn: {fileID: 1117964034447866081, guid: 0bfb593d0d3d8bd4c9ba57d8d86349e4, type: 3}
+    spawnChance: 100
 --- !u!1 &8776330056194246380
 GameObject:
   m_ObjectHideFlags: 0

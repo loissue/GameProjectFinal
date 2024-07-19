@@ -15,6 +15,7 @@ TagManager:
   - BuffManager
   - Tentacle
   - Chest
+  - Portal
   layers:
   - Default
   - TransparentFX

@@ -6,9 +6,10 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    int coin;
     void Start()
     {
-        
+        coin = Random.Range(0, 5);
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class CoinScript : MonoBehaviour
             // Add score using ScoringManagement singleton instance (if it exists)
             if (ScoringManagement.instance != null)
             {
-                ScoringManagement.instance.AddScore(1);
+                ScoringManagement.instance.AddScore(coin * (ChoseBiome.Instance.level + 1));
             }
             Destroy(gameObject);
         }

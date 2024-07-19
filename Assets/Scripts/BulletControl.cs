@@ -8,6 +8,7 @@ public class BulletControl : MonoBehaviour
     private RandomUpgrade chestopen;
     public InventoryScript InventoryScript;
     public GameObject pickupText; // Tham chiếu tới UI Text để hiển thị thông báo
+    public Text message;
     public PlayerInteract playerInteract;
     private bool isNearItem = false;
     private InventoryScript.BulletList currentItem; // Item hiện tại mà player đang đứng gần
@@ -44,10 +45,17 @@ public class BulletControl : MonoBehaviour
 
         if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Chest")
         {
-
-            isNearItem = false; // Đặt lại biến kiểm tra
-            chestopen.RandomDrop();
-            chestopen = null;
+            if (ScoringManagement.instance.score >= 5)
+            {
+                isNearItem = false; // Đặt lại biến kiểm tra
+                ScoringManagement.instance.AddScore(-5);
+                chestopen.RandomDrop();
+                chestopen = null;
+            }
+            else
+            {
+                StartCoroutine(DisplayTextTemp(10));
+            }
         }
 
     }
@@ -70,17 +78,21 @@ public class BulletControl : MonoBehaviour
                 isNearItem = true;
                 tags = "Weapon";
                 currentItemObject = other.gameObject;
-            pickupText.SetActive(true);
-
+                pickupText.SetActive(true);
         }
         RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
         if (other.CompareTag("Chest"))
         {
-            isNearItem = true;
-            tags = "Chest";
-            currentItemObject = other.gameObject;
-            pickupText.SetActive(true);
-            chestopen = upgrade;
+                isNearItem = true;
+                tags = "Chest";
+                currentItemObject = other.gameObject;
+                chestopen = upgrade;
+                pickupText.SetActive(true);
+        }
+        if (other.CompareTag("Portal"))
+        {
+            NewLevel.instant.nextLevel();
+            transform.position = new Vector2(29, -3);
         }
     }
 
@@ -97,6 +109,12 @@ public class BulletControl : MonoBehaviour
                 pickupText.SetActive(false); // Ẩn thông báo khi player rời xa item
             }
         }
+        if (other.CompareTag("Weapon"))
+        {
+            currentItem = null;
+            currentItemObject = null;
+            pickupText.SetActive(false);
+        }
         RandomUpgrade upgrade = other.GetComponent<RandomUpgrade>();
         if (other.CompareTag("Chest"))
         {
@@ -104,8 +122,17 @@ public class BulletControl : MonoBehaviour
                 pickupText.SetActive(false);
             chestopen = null;    
         }
-
     }
 
-    
+    IEnumerator DisplayTextTemp(float seconds)
+    {
+        message.text = "Not enought coin, need 5";
+        message.enabled = true;
+
+        yield return new WaitForSeconds(seconds);
+
+        message.enabled = false;
+    }
+
+
 }

@@ -20,6 +20,11 @@ public class ChoseBiome : MonoBehaviour
     public PrefabWithPercentage[] chosenList;
     public Transform terrainParent;
 
+    public GameObject portalPrefab; 
+    public float minX;              
+    public float maxX;              
+    public float fixedY = -197;     
+    public float fixedZ = 0;        
     void Awake()
     {
         if (Instance == null)
@@ -33,6 +38,7 @@ public class ChoseBiome : MonoBehaviour
         }
 
         InitializeChosenList();
+        PositionPortal();
     }
 
     public void InitializeChosenList()
@@ -77,6 +83,22 @@ public class ChoseBiome : MonoBehaviour
         else
         {
             Debug.LogError("Chosen list is null or empty.");
+        }
+    }
+
+    void PositionPortal()
+    {
+        if (portalPrefab != null)
+        {
+            float randomX = Random.Range(minX, maxX);
+            Vector3 newPosition = new Vector3(randomX, fixedY, fixedZ);
+
+            Instantiate(portalPrefab, newPosition, Quaternion.identity);
+            Debug.Log("Portal positioned at: " + newPosition);
+        }
+        else
+        {
+            Debug.LogError("Portal prefab is not assigned.");
         }
     }
 }
