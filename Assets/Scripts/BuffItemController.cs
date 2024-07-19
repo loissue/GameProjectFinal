@@ -13,7 +13,8 @@ public class BuffItemController : MonoBehaviour
         Eye,
         Gravity,
         Teleport,
-        Freeze
+        Freeze,
+        Health
     }
     public ItemType Type;
 
@@ -22,18 +23,16 @@ public class BuffItemController : MonoBehaviour
         switch (Type)
         {
             case ItemType.Shield:
-                buffManager.ApplyShieldBuff();
+                buffManager.ApplyShieldBuff(player);
                 break;
             case ItemType.Speed:
                 buffManager.ApplySpeedBuff(player);
-                audioManager.PlaySfx(audioManager.speedClip);
                 break;
             case ItemType.Jump:
                 buffManager.ApplyJumpBuff(player); 
                 break;
             case ItemType.Eye:
-                buffManager.ApplyEyeBuff();
-                audioManager.PlaySfx(audioManager.eyeClip);
+                buffManager.ApplyEyeBuff(player);
                 break;
             case ItemType.Gravity:
                 buffManager.ApplyGravityBuff(player);
@@ -43,9 +42,11 @@ public class BuffItemController : MonoBehaviour
                 buffManager.ApplyTeleportBuff(player);
                 break;
             case ItemType.Freeze:
-                buffManager.ApplyFreezeBuff();
+                buffManager.ApplyFreezeBuff(player);
                 break;
-
+            case ItemType.Health:
+                buffManager.ApplyHealthBuff(player);
+                break;
         }
         Destroy(gameObject);
     }
@@ -55,6 +56,7 @@ public class BuffItemController : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             OnItemPickUp(collision.gameObject);
+            audioManager.PlaySfx(audioManager.itemClip);
         }
     }
     private void Start()
