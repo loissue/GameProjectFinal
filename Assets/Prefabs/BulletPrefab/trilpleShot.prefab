@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7524208608631083714}
   - component: {fileID: 1679878875836549171}
   - component: {fileID: -8447995595781625086}
+  - component: {fileID: -2582522679968639391}
   m_Layer: 0
   m_Name: trilpleShot
   m_TagString: buffbullet
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1875853392462825946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.999627, y: -5.365919, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -158,3 +159,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletList:
     Bullet: {fileID: 1875853392462825946}
+--- !u!114 &-2582522679968639391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875853392462825946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7333d26f0c6891449adea2815e2d5b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropZoneType: 1

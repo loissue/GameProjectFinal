@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\FollowPlayer1.cs" />
     <Compile Include="Assets\Scripts\MobSpawn.cs" />
     <Compile Include="Assets\Scripts\EnemyS\DropItem.cs" />
+    <Compile Include="Assets\Scripts\InventoryScript\DraggableItem.cs" />
     <Compile Include="Assets\Scripts\Terrain\ChoseBiome.cs" />
     <Compile Include="Assets\Scripts\EnemyS\MeleeEnemy.cs" />
     <Compile Include="Assets\Scripts\Coin\CoinScript.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Assets\Scripts\weapon script\RifleScript.cs" />
     <Compile Include="Assets\Scripts\Terrain\Bomb.cs" />
     <Compile Include="Assets\Scripts\BuffItemController.cs" />
+    <Compile Include="Assets\Scripts\InventoryScript\DropZone.cs" />
     <Compile Include="Assets\Scripts\InventoryScript\ItemPickUp.cs" />
     <Compile Include="Assets\Scripts\Terrain\ReplaceEntity.cs" />
     <Compile Include="Assets\Scripts\MobSpawn1.cs" />
