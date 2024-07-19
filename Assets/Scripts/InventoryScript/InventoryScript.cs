@@ -7,8 +7,8 @@ public class InventoryScript : MonoBehaviour
 {
     public BulletList[] BulletLists;
     public GameObject inventoryCanvas; // Tham chiếu đến Canvas Inventory
-    public GameObject inventorySlotPrefab; // Prefab cho ô inventory
-    public Transform inventoryGrid; // Grid Layout Group trong Panel
+    // public GameObject inventorySlotPrefab; // Prefab cho ô inventory
+    // public Transform inventoryGrid; // Grid Layout Group trong Panel
 
     [System.Serializable]
     public class BulletList
@@ -26,7 +26,7 @@ public class InventoryScript : MonoBehaviour
     void Update()
     {
         
-        UpdateInventoryUI();
+        // UpdateInventoryUI();
         if (Input.GetKeyDown(KeyCode.B))
         {
             ToggleInventory();
@@ -43,7 +43,7 @@ public class InventoryScript : MonoBehaviour
             if (inventoryCanvas.activeSelf)
             {
                 
-                UpdateInventoryUI();
+                // UpdateInventoryUI();
                 
             }
         }
@@ -53,35 +53,5 @@ public class InventoryScript : MonoBehaviour
         }
     }
     
-    public void AddItemToInventory(BulletList item)
-    {
-        BulletList itemCopy = new BulletList();
-        itemCopy.Bullet = item.Bullet;
-
-        inventory.Add(itemCopy);
-        Debug.Log("Item added to inventory: " + itemCopy.Bullet.name);
-    }
-
-    public void UpdateInventoryUI()
-    {
-
-        // Xóa tất cả các ô inventory cũ
-        foreach (Transform child in inventoryGrid)
-        {
-            Destroy(child.gameObject);
-        }
-
-        // Tạo ô inventory mới dựa trên danh sách inventory
-        foreach (BulletList item in inventory)
-        {
-            GameObject slot = Instantiate(inventorySlotPrefab, inventoryGrid);
-            slot.SetActive(true); // Đảm bảo GameObject slot được kích hoạt
-            
-            Image icon = slot.GetComponent<Image>(); // Giả sử InventorySlot có một Image component
-            
-            icon.sprite = item.Bullet.GetComponent<SpriteRenderer>().sprite; // Lấy sprite từ GameObject
-            icon.gameObject.SetActive(true); // Đảm bảo Image component được kích hoạt
-
-        }
-    }
+    
 }

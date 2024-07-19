@@ -1,32 +1,53 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Magazin : MonoBehaviour
 {
     public Shoot shoot;
-
-    public GameObject bullet1;
-    public GameObject bullet2;
     public GunInven GunInven;
+    public GameObject bulletSlotPrefab; // Prefab cho các slot đạn
+    public Transform bulletGrid; // Grid Layout Group trong Panel
 
-    public GameObject[] Bullets;
-    // Start is called before the first frame update
+    public List<GameObject> bulletPrefabs; // Danh sách các loại đạn có thể spawn ngẫu nhiên
+    public int maxBullets = 4; // Số lượng đạn tối đa trong một slot
+
+    public List<GameObject> Bullets = new List<GameObject>(); // Danh sách chứa các bullet
+
     void Start()
     {
-        // //giveoutMagazin();
-        // Bullets = new GameObject[4];
-        // Bullets[0] = bullet1;
-        // Bullets[1] = bullet2;
-        // Bullets[2] = bullet1;
-        // Bullets[3] = bullet1;
+        CalculateMaxBulletsBasedOnDepth();
+        GenerateRandomBullets();
         
 
+        
     }
+
+    void CalculateMaxBulletsBasedOnDepth()
+    {
+        // Giả sử độ sâu tối đa là -100 và độ sâu nhỏ nhất là 0
+        // Tính maxBullets tỷ lệ với độ sâu
+        float depth = Mathf.Abs(transform.position.y);
+        float maxDepth = 100f; // Độ sâu tối đa giả định
+        maxBullets = Mathf.Clamp(Mathf.RoundToInt((depth / maxDepth) * 9), 1, 9);
+    }
+
+    void GenerateRandomBullets()
+    {
+        int bulletCount = Random.Range(1, maxBullets + 1);
+        Bullets = new List<GameObject>();
+        for (int i = 0; i < bulletCount; i++)
+        {
+            int randomIndex = Random.Range(0, bulletPrefabs.Count);
+            GameObject randomBullet = bulletPrefabs[randomIndex];
+            Bullets.Add(randomBullet);
+        }
+    }
+
+    
+
     public void addbullettomagazin(GameObject bullet)
     {
-        for (int i=0; i <Bullets.Length;i++)
+        for (int i = 0; i < Bullets.Count; i++)
         {
             if (Bullets[i] == null)
             {
@@ -35,17 +56,9 @@ public class Magazin : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
+
     void Update()
     {
-        
         shoot.getbulletlist(Bullets);
-        // GunInven.GetFirstGun(Bullets, this.gameObject);
     }
-    //public void giveoutMagazin() 
-    //{
-        
-
-    //    GunInven.GetFirstGun(Bullets,this.gameObject);
-    //}
 }

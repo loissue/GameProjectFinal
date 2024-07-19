@@ -158,10 +158,12 @@ MonoBehaviour:
   GunInven: {fileID: 5215860697040878598, guid: 6441f5acf80b4d648806ac3d29752bc9, type: 3}
   bulletSlotPrefab: {fileID: 5399870478755037038, guid: 5213ed9ce83e1a54ba9d9d66bf11598b, type: 3}
   bulletGrid: {fileID: 7190040879251954263, guid: 5213ed9ce83e1a54ba9d9d66bf11598b, type: 3}
-  Bullets:
-  - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+  bulletPrefabs:
   - {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
   - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+  - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
+  maxBullets: 4
+  Bullets: []
 --- !u!61 &126586410347478383
 BoxCollider2D:
   m_ObjectHideFlags: 0

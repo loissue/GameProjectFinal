@@ -12,7 +12,7 @@ public class Shoot : MonoBehaviour
     public Magazin Magazin;
     public Transform ShootPoint;
     public GunInven guninven;
-    public GameObject[] Bullets;
+    public List<GameObject> Bullets;
     int a = 0;
     private bool isShooting = false;
     public float shootInterval = 0.1f; // Reduced interval in seconds between shots
@@ -42,16 +42,16 @@ public class Shoot : MonoBehaviour
 
         while (Input.GetMouseButton(0))
         {
-            while (a < Bullets.Length && Bullets[a] == null)
+            while (a < Bullets.Count && Bullets[a] == null)
             {
                 a++;
-                if (a == Bullets.Length)
+                if (a == Bullets.Count)
                 {
                     a = 0;
                 }
             }
 
-            if (a < Bullets.Length && Bullets[a] != null)
+            if (a < Bullets.Count && Bullets[a] != null)
             {
                 if (Bullets[a].CompareTag("buffbullet"))
                 {
@@ -64,7 +64,7 @@ public class Shoot : MonoBehaviour
                         buffs.Add("CurveBullet");
                     }
                     a++;
-                    if (a == Bullets.Length)
+                    if (a == Bullets.Count)
                     {
                         a = 0;
                     }
@@ -74,7 +74,7 @@ public class Shoot : MonoBehaviour
                     
                     Shooting(Bullets[a], buffs);
                     a++;
-                    if (a == Bullets.Length)
+                    if (a == Bullets.Count)
                     {
                         a = 0;
                     }
@@ -88,7 +88,7 @@ public class Shoot : MonoBehaviour
         isShooting = false;
     }
 
-    public void getbulletlist(GameObject[] bulletLists)
+    public void getbulletlist(List<GameObject> bulletLists)
     {
         Bullets = bulletLists;
     }

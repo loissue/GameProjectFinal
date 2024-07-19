@@ -22,19 +22,14 @@ public class BulletControl : MonoBehaviour
 
     void Update()
     {
-        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Bullet")
+        if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
         {
-            InventoryScript.AddItemToInventory(currentItem); // Thêm item vào inventory
-            isNearItem = false; // Đặt lại biến kiểm tra
+            // Gọi hàm để tách và đánh rơi vũ khí hiện tại nếu có
+            DropCurrentWeapon();
 
-            InventoryScript.UpdateInventoryUI();
-            pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
-            currentItemObject.SetActive(false);
-        }
-        else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "Weapon")
-        {
-            playerInteract.UnequipCurrentWeapon(); // Gọi hàm để xóa vũ khí hiện tại
-            playerInteract.EquipWeapon(currentItemObject); // Equip vũ khí mới
+            // Equip vũ khí mới
+            playerInteract.EquipWeapon(currentItemObject);
+
             isNearItem = false; // Đặt lại biến kiểm tra
             pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
         }
@@ -43,15 +38,6 @@ public class BulletControl : MonoBehaviour
             isNearItem = false; // Đặt lại biến kiểm tra
             chestopen.RandomDrop();
             chestopen = null;
-        }
-        else if (isNearItem && Input.GetKeyDown(KeyCode.E) && tags == "buffbullet")
-        {
-            InventoryScript.AddItemToInventory(currentItem); // Thêm item vào inventory
-            isNearItem = false; // Đặt lại biến kiểm tra
-
-            InventoryScript.UpdateInventoryUI();
-            pickupText.SetActive(false); // Ẩn thông báo sau khi nhặt item
-            currentItemObject.SetActive(false);
         }
     }
 
@@ -130,6 +116,31 @@ public class BulletControl : MonoBehaviour
                 isNearItem = false;
                 pickupText.SetActive(false); // Ẩn thông báo khi player rời xa item
             }
+        }
+    }
+
+    private void DropCurrentWeapon()
+    {
+        // Kiểm tra nếu người chơi đang trang bị vũ khí
+        GameObject currentWeapon = playerInteract.GetEquippedWeapon();
+        if (currentWeapon != null)
+        {
+            // Tách vũ khí hiện tại khỏi người chơi
+            currentWeapon.transform.SetParent(null);
+            currentWeapon.transform.position = transform.position; // Đặt lại vị trí của vũ khí tại vị trí của người chơi
+            currentWeapon.SetActive(true);
+
+            // Đảm bảo vũ khí bị đánh rơi có thể nhặt lại
+            if (currentWeapon.GetComponent<Collider2D>() == null)
+            {
+                currentWeapon.AddComponent<BoxCollider2D>();
+            }
+
+            // Đặt tag cho vũ khí bị đánh rơi để có thể tương tác lại
+            currentWeapon.tag = "Weapon";
+
+            // Gỡ bỏ vũ khí hiện tại khỏi người chơi
+            playerInteract.UnequipCurrentWeapon();
         }
     }
 }
