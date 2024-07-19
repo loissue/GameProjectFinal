@@ -668,6 +668,7 @@ MonoBehaviour:
   ShootPoint: {fileID: 697077169}
   guninven: {fileID: 2026892400}
   Bullets: []
+  shootInterval: 0.1
 --- !u!114 &329319356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,9 +682,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoot: {fileID: 329319355}
-  bullet1: {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
-  bullet2: {fileID: 4141960196367161183, guid: 4307e6096557cf7429dd9db9f6d18938, type: 3}
   GunInven: {fileID: 2026892400}
+  bulletSlotPrefab: {fileID: 0}
+  bulletGrid: {fileID: 0}
   Bullets:
   - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
   - {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
@@ -3885,10 +3886,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a163843b5cd514d966a17006064470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletLists: []
-  inventoryCanvas: {fileID: 1290402046}
-  inventorySlotPrefab: {fileID: 2106937994874269705, guid: 936aa5cba1d851a48b4fad2b6c256df5, type: 3}
-  inventoryGrid: {fileID: 1214090291}
+  slotPrefab: {fileID: 0}
+  inventoryPanel: {fileID: 0}
+  magazinePanel: {fileID: 0}
+  inventorySlotCount: 10
+  magazineSlotCount: 4
   inventory: []
 --- !u!114 &2026892399
 MonoBehaviour:
@@ -3903,6 +3905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunHolder: {fileID: 1211578708}
+  guninven: {fileID: 0}
 --- !u!114 &2026892400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4429,6 +4432,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6e04562b3b9d01428dab2e47045b2f6, type: 3}
+--- !u!1001 &8055764308263200190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 622990947098894059, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.228382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -29.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233246937959723996, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587035478169890998, guid: 720aea6880b2db245a6b55a983037803, type: 3}
+      propertyPath: m_Name
+      value: BossProjectile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 720aea6880b2db245a6b55a983037803, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4450,3 +4514,4 @@ SceneRoots:
   - {fileID: 329319353}
   - {fileID: 807384755}
   - {fileID: 3426052395650770080}
+  - {fileID: 8055764308263200190}

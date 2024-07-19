@@ -7,26 +7,29 @@ namespace Boss
     {
         [Header("Attack Settings")] [SerializeField]
         private float timeBetweenAttacks;
+
         [SerializeField] private GameObject projectilePrefab;
         [SerializeField] private Transform projectileSpawnPoint;
 
         [Header("Downward Fan Attack Settings")] [SerializeField]
         private int downwardProjectilesCount;
+
         [SerializeField] private float downwardAngle;
 
         [Header("Spring  Spray Attack Settings")] [SerializeField]
         private int springSprayProjectilesCount;
+
         [SerializeField] private float springSprayAngle;
-        
-        [Header("Animation Explosion")] 
-        [SerializeField] private GameObject[] explosionPrefabs;
-        
+
+        [Header("Animation Explosion")] [SerializeField]
+        private GameObject[] explosionPrefabs;
+
         private bool isAttacking;
 
-        
+
         //References
         private Animator anim;
-        
+
         private void Start()
         {
             anim = GetComponent<Animator>();
@@ -39,6 +42,13 @@ namespace Boss
             while (isAttacking)
             {
                 yield return new WaitForSeconds(timeBetweenAttacks);
+
+                var bossHealth = gameObject.GetComponent<Health>();
+                if (bossHealth.currentHealth <= bossHealth.startingHealth / 2)
+                {
+                    downwardProjectilesCount *= 2;
+                    springSprayProjectilesCount *= 2;
+                }
 
                 int attackType = Random.Range(0, 2);
                 switch (attackType)
@@ -54,8 +64,8 @@ namespace Boss
                 }
             }
         }
-        
-        
+
+
         private IEnumerator SpringDownwardSprayAttack()
         {
             float angleStep = springSprayAngle / (springSprayProjectilesCount - 1);
@@ -72,7 +82,6 @@ namespace Boss
             yield return null; // Adjust timing if needed
         }
 
-        
 
         private IEnumerator DownwardSprayAttack()
         {
@@ -92,9 +101,10 @@ namespace Boss
         {
             GameObject projectile = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
             projectile.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.up * 10, ForceMode2D.Impulse); // Adjust speed
+            projectile.GetComponent<Rigidbody2D>()
+                .AddForce(projectile.transform.up * 10, ForceMode2D.Impulse); // Adjust speed
         }
-        
+
         public IEnumerator Explode()
         {
             foreach (var explosionPrefab in explosionPrefabs)
@@ -102,9 +112,10 @@ namespace Boss
                 yield return new WaitForSeconds(0.2f);
                 explosionPrefab.SetActive(true);
             }
+
             yield return null; // Adjust timing if needed
         }
-        
+
         public void OnDeath()
         {
             isAttacking = false;

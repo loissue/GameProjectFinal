@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using EnemyS;
+using UnityEngine;
 
 namespace Boss
 {
-    public class BossProjectile : MonoBehaviour
+    public class BossProjectile : EnemyDamage
     {
         [SerializeField] private float speed = 10f;
         [SerializeField] private float lifetime = 5f;

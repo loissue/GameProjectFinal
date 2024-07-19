@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     [Header ("Health")]
-    [SerializeField] private float startingHealth=400;
+    [SerializeField] public float startingHealth=400;
     public float currentHealth=0;
     private Animator anim;
     private bool dead=false;
