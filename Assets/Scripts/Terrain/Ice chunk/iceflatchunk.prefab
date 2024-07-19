@@ -101,8 +101,8 @@ MonoBehaviour:
   spawnHeightOffset: 1
   spawnableObjects:
   - objectToSpawn: {fileID: 2371813429967955879, guid: 6e1a32de14dda3f4da7a390ef9ca04e3, type: 3}
-    spawnChance: 10
+    spawnChance: 5
   - objectToSpawn: {fileID: 2528969233964719446, guid: 6f80d80fa772978498e92d15e4860173, type: 3}
-    spawnChance: 10
+    spawnChance: 5
   - objectToSpawn: {fileID: 6774909512471863999, guid: 217a1b5e82ab5af4ca886327696f062d, type: 3}
-    spawnChance: 2
+    spawnChance: 1
