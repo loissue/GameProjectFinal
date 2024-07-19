@@ -1284,7 +1284,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333900276114211296}
-  - component: {fileID: 4437375216222068704}
   - component: {fileID: 7475480755635934072}
   - component: {fileID: 1364949095910410318}
   m_Layer: 3
@@ -1320,21 +1319,6 @@ Transform:
   - {fileID: 6105175077721344828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4437375216222068704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7555581044122428436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  removegroundchance: 5
-  spawnHeightOffset: 1
-  spawnableObjects: []
 --- !u!212 &7475480755635934072
 SpriteRenderer:
   m_ObjectHideFlags: 0

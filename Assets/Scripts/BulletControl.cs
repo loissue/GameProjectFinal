@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -91,7 +92,15 @@ public class BulletControl : MonoBehaviour
         }
         if (other.CompareTag("Portal"))
         {
-            NewLevel.instant.nextLevel();
+            if (NewLevel.instant != null)
+            {
+                NewLevel.instant.nextLevel();
+                Debug.Log("Instance created and nextLevel method called.");
+            }
+            else
+            {
+                Debug.Log("Instance not created.");
+            }
             transform.position = new Vector2(29, -3);
         }
     }

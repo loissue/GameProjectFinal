@@ -438,7 +438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 333900276114211296}
   - component: {fileID: 7475480755635934072}
-  - component: {fileID: 1260960493560421481}
   - component: {fileID: 3149886889797639568}
   m_Layer: 3
   m_Name: Hole
@@ -518,21 +517,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1260960493560421481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7555581044122428436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  removegroundchance: 5
-  spawnHeightOffset: 1
-  spawnableObjects: []
 --- !u!114 &3149886889797639568
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3719247839508884704}
   - component: {fileID: 5622792480049290768}
   - component: {fileID: 1997177706909171440}
-  - component: {fileID: 8250274935994642134}
   - component: {fileID: 1893932693574665703}
   m_Layer: 0
   m_Name: Enemy
@@ -160,22 +159,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8250274935994642134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9140195117478459886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef9ae87bd14e8fa4b9c9300968510a56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 200
-  moveSpeed: 2
-  minTimeToChangeDirection: 3
-  maxTimeToChangeDirection: 15
 --- !u!114 &1893932693574665703
 MonoBehaviour:
   m_ObjectHideFlags: 0

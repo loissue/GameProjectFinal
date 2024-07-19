@@ -2124,7 +2124,6 @@ GameObject:
   m_Component:
   - component: {fileID: 333900276114211296}
   - component: {fileID: 1136795926166690694}
-  - component: {fileID: 4437375216222068704}
   - component: {fileID: 7475480755635934072}
   - component: {fileID: 4154219676715804211}
   m_Layer: 3
@@ -2213,25 +2212,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4437375216222068704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7555581044122428436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55997b7cb2e3c0f49b6171c4e8457ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  removegroundchance: 20
-  spawnHeightOffset: 1
-  spawnableObjects:
-  - objectToSpawn: {fileID: 9140195117478459886, guid: 25f825af6b67ef846a4ecc3d9e684a42, type: 3}
-    spawnChance: 4.6
-  - objectToSpawn: {fileID: 5047076128567403307, guid: dfca3ae0cad5a2f489714fa32528f9f4, type: 3}
-    spawnChance: 2.7
 --- !u!212 &7475480755635934072
 SpriteRenderer:
   m_ObjectHideFlags: 0

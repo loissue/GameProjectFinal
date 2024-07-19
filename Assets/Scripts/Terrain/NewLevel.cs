@@ -5,6 +5,19 @@ using UnityEngine;
 public class NewLevel : MonoBehaviour
 {
     public static NewLevel instant;
+
+    void Awake()
+    {
+        if (instant == null)
+        {
+            instant = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Update()
     {
     }

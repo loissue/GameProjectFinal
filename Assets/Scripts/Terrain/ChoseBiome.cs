@@ -13,6 +13,7 @@ public class ChoseBiome : MonoBehaviour
         public float percentage;
     }
 
+    BackgroundManager backgroundManager;
     public PrefabWithPercentage[] list1;
     public PrefabWithPercentage[] list2;
     public PrefabWithPercentage[] list3;
@@ -24,17 +25,22 @@ public class ChoseBiome : MonoBehaviour
     public float minX;              
     public float maxX;              
     public float fixedY = -197;     
-    public float fixedZ = 0;        
+    public float fixedZ = 0;
     void Awake()
     {
+        Debug.Log("Awake called. Current Instance is: " + (Instance == null ? "null" : "not null"));
+
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("Instance set to this and marked as DontDestroyOnLoad");
         }
-        else
+        else if (Instance != this)
         {
+            Debug.Log("Another instance detected, destroying this GameObject");
             Destroy(gameObject);
+            return;
         }
 
         InitializeChosenList();
