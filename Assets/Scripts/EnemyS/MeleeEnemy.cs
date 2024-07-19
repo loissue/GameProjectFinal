@@ -70,6 +70,9 @@ public class SkeletonEnemy : Enemy
     private void DamagePlayer()
     {
         if (PlayerInSight())
+        {
+            Debug.Log("Player hit");
             playerHealth.TakeDamage(damage);
+        }
     }
 }

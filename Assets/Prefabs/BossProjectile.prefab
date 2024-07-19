@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4233246937959723996}
   - component: {fileID: 8244591898655342045}
   - component: {fileID: 622990947098894059}
-  - component: {fileID: 7854866760540847639}
   - component: {fileID: 1080669946939831013}
   - component: {fileID: 3531093786504379615}
+  - component: {fileID: 7516810870705585423}
   m_Layer: 0
   m_Name: BossProjectile
   m_TagString: Untagged
@@ -115,27 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &7854866760540847639
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7587035478169890998}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3daaaae0fb4e0f143a04f1abd9371de7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1080669946939831013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f14529d7a04e8882759f00896f8b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
   speed: 10
   lifetime: 5
 --- !u!58 &3531093786504379615
@@ -185,3 +165,24 @@ CircleCollider2D:
   m_Offset: {x: -0.00428881, y: -0.048576083}
   serializedVersion: 2
   m_Radius: 0.1599816
+--- !u!95 &7516810870705585423
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7587035478169890998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62c6953dc9e2d3043aa83ff2f1c62744, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

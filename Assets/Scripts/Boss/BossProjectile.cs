@@ -24,7 +24,7 @@ namespace Boss
         {
             if (collision.CompareTag("Player"))
             {
-                collision.GetComponent<Health>().TakeDamage(10); // Adjust damage as needed
+                base.OnTriggerEnter2D(collision);
                 Destroy(gameObject);
             }
         }

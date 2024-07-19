@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7542890450189837846}
   - component: {fileID: 1264440680531185496}
   - component: {fileID: -230250715736365660}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ MonoBehaviour:
   polygonCollider: {fileID: 7580861943500228841}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &7542890450189837846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,11 +242,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  isShield: 0
   iFramesDuration: 0
   numberOfFlashes: 0
   components:
   - {fileID: 1264440680531185496}
   - {fileID: 8713857222845568397}
+  audioManager: {fileID: 0}
 --- !u!114 &1264440680531185496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +269,7 @@ MonoBehaviour:
     m_Bits: 8
   groundCheckDistance: 0.98
   speed: 3
+  moveDuration: 3
 --- !u!114 &-230250715736365660
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -207,7 +207,7 @@ MonoBehaviour:
   polygonCollider2D: {fileID: 4538657371306742052}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &4485447007571268158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +223,7 @@ MonoBehaviour:
   patrolDistanceX: 10
   patrolDistanceY: 1
   speed: 5
+  moveDuration: 3
   idleDuration: 1
 --- !u!114 &7297032490440490547
 MonoBehaviour:
@@ -237,9 +238,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  isShield: 0
   iFramesDuration: 0
   numberOfFlashes: 0
   components: []
+  audioManager: {fileID: 0}
 --- !u!50 &2209917509602159412
 Rigidbody2D:
   serializedVersion: 4

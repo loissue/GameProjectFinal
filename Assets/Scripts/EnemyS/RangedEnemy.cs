@@ -80,12 +80,4 @@ public class RangedEnemy : Enemy
         RaycastHit2D hit = Physics2D.BoxCast(boxCenter, boxSize, 0, Vector2.left, 0, playerLayer);
         return hit.collider != null;
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Vector3 boxCenter = polygonCollider2D.bounds.center + transform.right * range * transform.localScale.x * colliderDistance;
-        Vector3 boxSize = new Vector3(polygonCollider2D.bounds.size.x * range, polygonCollider2D.bounds.size.y * detectionHeightMultiplier, polygonCollider2D.bounds.size.z);
-        Gizmos.DrawWireCube(boxCenter, boxSize);
-    }
 }
