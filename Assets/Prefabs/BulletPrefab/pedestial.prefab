@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   removegroundchance: 5
-  spawnHeightOffset: 1.5
+  spawnHeightOffset: 1.2
   spawnableObjects:
   - prefabToSpawn: {fileID: 5315227781526368629, guid: 295e39790d6659b44bb9ad397b2000dc, type: 3}
     spawnChance: 100

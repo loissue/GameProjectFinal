@@ -160,8 +160,7 @@ MonoBehaviour:
   GunInven: {fileID: 0}
   Bullets:
   - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
-  - {fileID: 1875853392462825946, guid: a9eec7227dcaeb54598c7e57584183a5, type: 3}
-  - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
+  - {fileID: 5023753839636175137, guid: 2a9ff64ae9832da4cad2db40ec3880ff, type: 3}
   - {fileID: 4141960196367161183, guid: 79c312e10d3b4be448f37e9381341b79, type: 3}
 --- !u!61 &126586410347478383
 BoxCollider2D:

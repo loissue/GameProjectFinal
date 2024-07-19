@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
 {
     public Transform gunHolder; // Gunholder của nhân vật
     private GameObject equippedWeapon; // Vũ khí được trang bị
-    
+    public GunInven guninven;
     void Start()
     {
         
@@ -27,7 +28,7 @@ public class PlayerInteract : MonoBehaviour
         // Kích hoạt vũ khí nếu nó bị vô hiệu hóa
         weapon.SetActive(true);
         weapon.GetComponent<Shoot>().enabled = true;
-
+        guninven.GetFirstGun(weapon.GetComponent<Magazin>().Bullets,weapon);
         // Gán vũ khí được trang bị
         equippedWeapon = weapon;
     }
