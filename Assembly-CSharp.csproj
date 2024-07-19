@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\InventoryScript\ItemScript.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\weaponpickup.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\BufManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Terrain\Bomb.cs" />
