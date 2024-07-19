@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6592173529115958666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4015732339338829896}
+  - component: {fileID: 8378507807472943034}
+  - component: {fileID: 5683645588676845752}
+  m_Layer: 0
+  m_Name: BiomeChose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4015732339338829896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592173529115958666}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8378507807472943034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592173529115958666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc495f75eee3bc4dac55a116e925c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
+  list1:
+  - prefab: {fileID: 7555581044122428436, guid: cadf8656918f30f42a46439724d07cb8, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: d10cc560687428347907a740d47acde5, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 15f1bbedc59cb3b449c8c99098d01b48, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 8708939a66fffeb469f096c3d455fed3, type: 3}
+    percentage: 40
+  - prefab: {fileID: 7555581044122428436, guid: bf7eae8a20377204898b8a532720f86e, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: bac4bc8a84f197a46b2a2bea550df7b1, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 6976867ad3f174a408ad287af8ca76c5, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: ec4d50841bff5024b977a6f41915d842, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 0d69c7ad664de2b43ad7002c625540fb, type: 3}
+    percentage: 10
+  list2:
+  - prefab: {fileID: 7555581044122428436, guid: 219941ebe38333947bca82ef65cf8b09, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 54250682cb8b77c40868b835d0f4ec8b, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 100e6da04b2fd614dafe15060b5c344b, type: 3}
+    percentage: 5
+  - prefab: {fileID: 7555581044122428436, guid: cfcf00b47744cd044b768f76b6213598, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 4a8e6a37838c8e745b063150d4e3760c, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 94396c21f67db344da74dc371eaa6aa2, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 2b5ff241dadca3241971ba2388f3834e, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 3eb23a12350db894295a0d043014f436, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: ab42b82d8c4e2574a8fc6f9ebb00e152, type: 3}
+    percentage: 10
+  - prefab: {fileID: 7555581044122428436, guid: 4af9aca7a50724342bf26220fe6bf24f, type: 3}
+    percentage: 10
+  list3:
+  - prefab: {fileID: 7555581044122428436, guid: 964d96f1b50682b478ba2e58077901af, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: cf89231d47cb2df4d94e61379951559b, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: b62388c309082344796bb09283e07706, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: de2bbc4c7f1b4ec4aa138fbdf93646d3, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 58fbf67a1fb6fae44ad8516fbc79ee17, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: 8c4f47edd45d24b408fd95e9cab30cfe, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: ac53b23bb9192484faaa9df2b23e186f, type: 3}
+    percentage: 20
+  - prefab: {fileID: 7555581044122428436, guid: a8b85b5078fb4f14c884df89a74663cc, type: 3}
+    percentage: 20
+  chosenList: []
+  terrainParent: {fileID: 0}
+  portalPrefab: {fileID: 6670981508512606071, guid: 1226f43141740b14f94ab134d935bc1d, type: 3}
+  minX: -97
+  maxX: 207
+  fixedY: -201
+  fixedZ: 0
+--- !u!114 &5683645588676845752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6592173529115958666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9adcecb32cbfee46bc2a030f3954fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
