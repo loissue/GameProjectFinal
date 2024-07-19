@@ -1,17 +1,19 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Boss;
 using EnemyS;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
     [Header ("Health")]
-    [SerializeField] private float startingHealth;
-    public float currentHealth { get; set; }
+    [SerializeField] private float startingHealth=400;
+    public float currentHealth=0;
     private Animator anim;
-    private bool dead;
-
+    private bool dead=false;
+    public Image healthBar;
+    public bool isShield;
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
@@ -21,6 +23,7 @@ public class Health : MonoBehaviour
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
     private Coroutine burnCoroutine;
+     public AudioManager audioManager;
 
     private void Awake()
     {
@@ -28,41 +31,51 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
+    private void Update()
+    {
+    }
     
     public void TakeDamage(float _damage)
     {
+        
         if (invulnerable) return;
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
+      healthBar.fillAmount = currentHealth/startingHealth;
+        audioManager.PlaySfx(audioManager.hurtClip);
         if (currentHealth > 0)
         {
+            Debug.Log("Player hurt");
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
         }
-        else
+        else if (!dead) 
         {
-            if (!dead)
-            {
-                anim.SetTrigger("die");
-                var rgBody = gameObject.GetComponent<Rigidbody2D>();
-                if (rgBody != null)
-                {
-                    rgBody.bodyType = RigidbodyType2D.Dynamic;
-                }
-                //Deactivate all attached component classes
-                foreach (Behaviour component in components)
-                    component.enabled = false;
-                    
-                dead = true;
-                var dropItem = GetComponent<DropItem>();
-                if (dropItem != null)
-                    dropItem.spawnBuff(gameObject.transform.position);
-            }
+            dead = true; 
+            anim.SetTrigger("die");
+            Debug.Log("Player died");
+
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
+            foreach (Behaviour component in components)
+                component.enabled = false;
+
+            var dropItem = GetComponent<DropItem>();
+            if (dropItem != null)
+                dropItem.spawnBuff(gameObject.transform.position);
+
+            StartCoroutine(DisableAfterDelay());
         }
     }
-    
+    private IEnumerator DisableAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        gameObject.SetActive(false);
+    }
+
     public void ApplyBurnEffect(float duration, float damagePerSecond)
     {
+
         if (burnCoroutine != null)
             StopCoroutine(burnCoroutine);
 
@@ -98,9 +111,6 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(10, 11, false);
         invulnerable = false;
     }
+    
 
-    private void Deactivate()
-    {
-        gameObject.SetActive(false);
-    }
 }

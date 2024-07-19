@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class BufManager : MonoBehaviour
 {
     [Header("Buff Eye")]
-    public CinemachineVirtualCamera virtualCamera;
     public Image eyeImage;
     public float orthographicSize = 5f;
     public float timeEye = 5f;
+    public CinemachineVirtualCamera virtualCamera;
+    private float originalSize;
 
     [Header("Buff Speed")]
     public float moveBuff = 10f;
@@ -24,6 +25,7 @@ public class BufManager : MonoBehaviour
     [Header("Buff Shield")]
     public Image shieldImage;
     public float timeShield = 10f;
+    public Image shield;
     [Header("Buff Gravity Revert")]
     public float timeGravity = 10f;
     public Image gravityImage;
@@ -33,8 +35,13 @@ public class BufManager : MonoBehaviour
     [Header("Buff TimeFreeze")]
     public float timeFreeze = 10f;
     public Image freezeImage;
+    public AudioManager audioManager;
+
+    [Header("Buff Health")]
+    public float healthBuff = 100f;
     private void Start()
     {
+        originalSize = virtualCamera.m_Lens.OrthographicSize;
         HideAllImages();
     }
 
@@ -43,10 +50,11 @@ public class BufManager : MonoBehaviour
         eyeImage.gameObject.SetActive(false);
         speedImage.gameObject.SetActive(false);
         jumpImage.gameObject.SetActive(false);
-        shieldImage.gameObject.SetActive(false);
         gravityImage.gameObject.SetActive(false);
         teleportImage.gameObject.SetActive(false);
         freezeImage.gameObject.SetActive(false);
+        shieldImage.gameObject.SetActive(false);
+        shield.gameObject.SetActive(false);
     }
 
     public void ApplyGravityBuff(GameObject player)
@@ -62,43 +70,49 @@ public class BufManager : MonoBehaviour
                 player.GetComponent<Rigidbody2D>().gravityScale = Mathf.Abs(player.GetComponent<Rigidbody2D>().gravityScale)/2; 
             }));
         }
-        speedImage.gameObject.SetActive(false);
     }
 
     public void ApplySpeedBuff(GameObject player)
     {
+        speedImage.gameObject.SetActive(true);
         PlayerMovement movement = player.GetComponent<PlayerMovement>();
         float originalSpeed = movement.movespeed;
         movement.movespeed = moveBuff;
-        speedImage.gameObject.SetActive(true);
         StartCoroutine(ApplyBuff(timeMove, speedImage, () => movement.movespeed = originalSpeed));
-        speedImage.gameObject.SetActive(false);
     }
 
     public void ApplyJumpBuff(GameObject player)
     {
+        jumpImage.gameObject.SetActive(true);
+
         PlayerMovement movement = player.GetComponent<PlayerMovement>();
         float originalJumpForce = movement.jumpForce;
         movement.jumpForce = jumpBuff;
-        jumpImage.gameObject.SetActive(true);
         StartCoroutine(ApplyBuff(timeJump, jumpImage, () => movement.jumpForce = originalJumpForce));
-        jumpImage.gameObject.SetActive(false);
     }
 
-    public void ApplyEyeBuff()
+    public void ApplyEyeBuff(GameObject player)
     {
-        float originalSize = virtualCamera.m_Lens.OrthographicSize;
-        virtualCamera.m_Lens.OrthographicSize = orthographicSize;
         eyeImage.gameObject.SetActive(true);
-        StartCoroutine(ApplyBuff(timeEye, eyeImage, () => virtualCamera.m_Lens.OrthographicSize = originalSize));
-        eyeImage.gameObject.SetActive(false);
+        player.GetComponent<PlayerMovement>().isEye = true; 
+        player.GetComponent<PlayerMovement>().orthographic = orthographicSize;
+        StartCoroutine(ApplyBuff(timeEye, eyeImage,  () => { player.GetComponent<PlayerMovement>().isEye = false; virtualCamera.m_Lens.OrthographicSize = originalSize; }));
+    }
+    public void ApplyHealthBuff(GameObject player)
+    {
+        player.GetComponent<Health>().currentHealth += healthBuff;
+        audioManager.PlaySfx(audioManager.healthClip);
     }
 
-    public void ApplyShieldBuff()
+    public void ApplyShieldBuff(GameObject player)
     {
-        shieldImage.gameObject.SetActive(true);
-        StartCoroutine(ApplyBuff(timeShield, shieldImage, null));
-        shieldImage.gameObject.SetActive(false);
+        player.GetComponent<Health>().isShield = true;
+        shield.gameObject.SetActive(true) ; 
+        StartCoroutine(ApplyBuff(timeShield, shieldImage, () =>
+        {
+            player.GetComponent<Health>().isShield = false;
+            shield.gameObject.SetActive(false);
+        }));
     }
 
     private IEnumerator ApplyBuff(float time, Image image, System.Action resetAction)
@@ -119,20 +133,17 @@ public class BufManager : MonoBehaviour
     {
         teleportImage.gameObject.SetActive(true);
         PlayerMovement playerMove = player.GetComponent<PlayerMovement>();
-        if (playerMove != null)
-        {
             playerMove.isTeleport = true;
             StartCoroutine(ApplyBuff(timeTeleport, teleportImage, () =>
             {
                 playerMove.isTeleport = false;
             }));
-        }
-        teleportImage.gameObject.SetActive(false);
     }
-    public void ApplyFreezeBuff()
+    public void ApplyFreezeBuff(GameObject player)
     {
         freezeImage.gameObject.SetActive(true);
-        StartCoroutine(ApplyBuff(timeFreeze, freezeImage, () => Time.timeScale=0.4f));
-        freezeImage.gameObject.SetActive(false);
+        player.GetComponent<PlayerMovement>().isFreeze = true;
+        StartCoroutine(ApplyBuff(timeFreeze, freezeImage, () => { player.GetComponent<PlayerMovement>().isFreeze = false;audioManager.SetBackgroundSpeed(1f); }  ));
+        
     }
 }
